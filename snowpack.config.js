@@ -1,7 +1,4 @@
-const webpack = require('webpack');
-
 const projectDir = process.cwd();
-
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
