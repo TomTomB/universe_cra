@@ -1,8 +1,12 @@
+const webpack = require('webpack');
+
+const projectDir = process.cwd();
+
+
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: { url: '/', static: true },
-    src: { url: '/dist' },
+    "src/renderer": { url: '/' },
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
@@ -14,22 +18,26 @@ module.exports = {
         ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
       },
     ],
+    [
+      '@snowpack/plugin-webpack',
+      {
+        extendConfig: (config) => {
+          config.entry.index = `${projectDir}/build/renderer-int/index.js`;
+          config.output.path = `${projectDir}/build/renderer/`;
+          return config;
+        },
+      },
+    ],
   ],
+  alias: {
+    '@universe/shared': 'src/shared',
+    '@universe/types': 'src/types',
+    '@universe/mocks': 'src/mocks',
+  },
   routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+    { "match": "routes", "src": ".*", "dest": "index.html" },
   ],
-  optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
-  },
-  packageOptions: {
-    /* ... */
-  },
   devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
+    hmr: true
+  }
 };

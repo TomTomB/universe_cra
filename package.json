@@ -1,13 +1,22 @@
 {
+  "name": "universe",
+  "version": "0.0.44",
+  "private": true,
   "scripts": {
     "commit": "npx git-cz",
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "node scripts/serve.js",
+    "build": "node scripts/build.js",
+    "dist": "electron-builder",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "@imjs/electron-differential-updater": "^5.1.4",
+    "@sentry/electron": "^2.4.0",
+    "electron-log": "^4.3.4",
+    "electron-updater": "^4.3.8",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -15,6 +24,7 @@
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-react-refresh": "^2.4.0",
     "@snowpack/plugin-typescript": "^1.2.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
     "@snowpack/web-test-runner-plugin": "^0.2.0",
     "@testing-library/react": "^11.0.0",
     "@types/chai": "^4.2.13",
@@ -24,6 +34,11 @@
     "@types/snowpack-env": "^2.3.2",
     "@web/test-runner": "^0.12.0",
     "chai": "^4.2.0",
+    "electron": "^12.0.5",
+    "electron-builder": "^22.10.5",
+    "electron-devtools-installer": "^3.2.0",
+    "esbuild": "^0.11.15",
+    "fs-extra": "^9.1.0",
     "prettier": "^2.0.5",
     "snowpack": "^3.0.1",
     "typescript": "^4.0.0"
