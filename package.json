@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "commit": "npx git-cz",
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.tsx\"",
