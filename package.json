@@ -7,7 +7,7 @@
     "start": "node scripts/serve.js",
     "build": "node scripts/build.js",
     "dist": "electron-builder",
-    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test": "web-test-runner \"src/**/*.test.{js,jsx,ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "postinstall": "electron-builder install-app-deps"
