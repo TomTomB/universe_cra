@@ -1,8 +1,8 @@
+import type { UniverseAPI } from '../types/window';
 import { contextBridge } from 'electron';
 import { init } from '@sentry/electron/dist/renderer';
-import { sentryURL } from '../shared/constants';
 import packageJSON from '../../package.json';
-import type { UniverseAPI } from '../types/window';
+import { sentryURL } from '../shared/constants';
 
 init({
   dsn: sentryURL,

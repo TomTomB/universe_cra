@@ -1,6 +1,6 @@
 import { mockCredentials, mockLockfile } from '../../mocks/lcu';
-import { expect } from 'chai';
 import LCUConnector from './lcu-connector';
+import { expect } from 'chai';
 
 describe('LCUConnector', () => {
   it('should get created', () => {

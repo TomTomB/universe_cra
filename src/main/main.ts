@@ -1,10 +1,11 @@
-import { join } from 'path';
+/* eslint-disable @typescript-eslint/no-var-requires */
 import * as Protocol from './util/protocol';
 import { BrowserWindow, app, ipcMain, protocol, shell } from 'electron';
 import AppUpdater from './updater/appUpdater';
 import LCUConnector from './lcu/lcu-connector';
 import Logger from './util/logger';
 import { init } from '@sentry/electron/dist/main';
+import { join } from 'path';
 import { sentryURL } from '../shared/constants';
 
 init({
