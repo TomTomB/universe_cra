@@ -21,7 +21,7 @@ const buildNodeFile = (file, out) => {
 (async () => {
   fsExtra.removeSync(projectDir + '/build');
 
-  const config = await loadConfiguration({ mount: { "src/renderer": { url: '/renderer-int' }, } });
+  const config = await loadConfiguration({ mount: { "src": { url: '/renderer-int' }, } });
   await build({ config });
 
   logger.warn('! building main...');
@@ -43,7 +43,7 @@ const buildNodeFile = (file, out) => {
 
   logger.warn('! cleaning up...');
 
-  fsExtra.copySync(projectDir + '/build/renderer-int/index.html', projectDir + '/build/renderer/index.html');
+  fsExtra.copySync(projectDir + '/build/renderer-int/renderer/index.html', projectDir + '/build/renderer/index.html');
   fsExtra.removeSync(projectDir + '/build/renderer-int');
   fsExtra.removeSync(projectDir + '/build/_snowpack');
 

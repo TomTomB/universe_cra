@@ -9,4 +9,5 @@ declare interface UniverseAPI {
   isProd: boolean;
   isDev: boolean;
   isTest: boolean;
+  isStorybook: boolean;
 }

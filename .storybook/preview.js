@@ -1,7 +1,6 @@
-import theme from '@styles/theme';
 import { ThemeProvider, StyleSheetManager } from 'styled-components';
-import * as Styles from '@styles';
-import store from '@store';
+import * as Styles from '../src/renderer/style';
+import store from '../src/renderer/store';
 import { Provider } from 'react-redux';
 
 export const parameters = {

@@ -3,8 +3,9 @@ const projectDir = process.cwd();
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    "src/renderer": { url: '/' },
+    "src": { url: '/' },
   },
+  exclude: ["**/src/main/**/*"],
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
@@ -19,7 +20,7 @@ module.exports = {
       '@snowpack/plugin-webpack',
       {
         extendConfig: (config) => {
-          config.entry.index = `${projectDir}/build/renderer-int/index.js`;
+          config.entry.index = `${projectDir}/build/renderer-int/renderer/index.js`;
           config.output.path = `${projectDir}/build/renderer/`;
           return config;
         },
@@ -27,14 +28,17 @@ module.exports = {
     ],
   ],
   alias: {
-    '@universe/shared': 'src/shared',
-    '@universe/types': 'src/types',
-    '@universe/mocks': 'src/mocks',
+    '@universe/shared': './src/shared',
+    '@universe/core': './src/core',
+    '@universe/types': './src/types',
+    '@universe/mocks': './src/mocks',
+    '@universe/renderer/store': './src/renderer/store',
+    '@universe/renderer/style': './src/renderer/style',
   },
   routes: [
-    { "match": "routes", "src": ".*", "dest": "index.html" },
+    { "match": "routes", "src": ".*", "dest": "renderer/index.html" },
   ],
   devOptions: {
-    hmr: true
+    hmr: true,
   }
 };

@@ -8,8 +8,14 @@
     "baseUrl": "./",
     "paths": {
       "@universe/shared/*": ["src/shared/*"],
+      "@universe/core/*": ["src/core/*"],
+      "@universe/core": ["src/core/index.ts"],
       "@universe/types/*": ["src/types/*"],
-      "@universe/mocks/*": ["src/mocks/*"]
+      "@universe/mocks/*": ["src/mocks/*"],
+      "@universe/renderer/store/*": ["src/renderer/store/*"],
+      "@universe/renderer/store": ["src/renderer/store/index.ts"],
+      "@universe/renderer/style/*": ["src/renderer/style/*"],
+      "@universe/renderer/style": ["src/renderer/style/index.ts"]
     },
     /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,
