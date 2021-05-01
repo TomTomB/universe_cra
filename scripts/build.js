@@ -4,6 +4,7 @@ const esBuild = require('esbuild');
 
 const projectDir = process.cwd();
 
+process.env.NODE_ENV = 'production';
 
 const buildNodeFile = (file, out) => {
   return esBuild.build({
