@@ -26,6 +26,16 @@ module.exports = {
         },
       },
     ],
+    [
+      "@snowpack/plugin-babel",
+      {
+        input: ['.js', '.mjs', '.jsx', '.ts', '.tsx'], 
+        transformOptions: {
+          presets: ["@babel/preset-typescript", "@babel/preset-react"],
+          plugins: ["@babel/plugin-transform-typescript", "@babel/plugin-syntax-flow", "babel-plugin-styled-components"]
+        }
+      }
+    ]
   ],
   alias: {
     '@universe/shared': './src/shared',

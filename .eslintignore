@@ -36,6 +36,7 @@ intermediate
 
 scripts
 .storybook
+snowpack.config.js
 
 .idea
 npm-debug.log.*
