@@ -1,13 +1,28 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 const HeadingTypography = createGlobalStyle`
- h1, h2, h3, h4, h5, h6, a, p, label, li {
+${css`
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  label,
+  li {
     font-kerning: normal;
     font-feature-settings: 'kern' 1;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: LoL Display;
     margin: 0 0 0.5em;
 
@@ -111,6 +126,7 @@ const HeadingTypography = createGlobalStyle`
       color: ${(props) => props.theme.colors.grey[1]};
     }
   }
+`}
 `;
 
 export default HeadingTypography;

@@ -1,11 +1,18 @@
 {
-  "include": ["src", "types"],
+  "include": ["src"],
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
     "baseUrl": "./",
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
     "paths": {
       "@universe/shared/*": ["src/shared/*"],
       "@universe/core/*": ["src/core/*"],
@@ -16,15 +23,6 @@
       "@universe/renderer/store": ["src/renderer/store/index.ts"],
       "@universe/renderer/style/*": ["src/renderer/style/*"],
       "@universe/renderer/style": ["src/renderer/style/index.ts"]
-    },
-    /* noEmit - Snowpack builds (emits) files, not tsc. */
-    "noEmit": true,
-    /* Additional Options */
-    "strict": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "importsNotUsedAsValues": "error"
+    }
   }
 }

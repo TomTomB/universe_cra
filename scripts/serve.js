@@ -1,11 +1,12 @@
 const { loadConfiguration, startServer, logger } = require('snowpack');
-const fsExtra = require('fs-extra')
+const fsExtra = require('fs-extra');
 const esBuild = require('esbuild');
 const path = require('path');
 const { spawn } = require('child_process');
 
 const projectDir = process.cwd();
 
+process.env.NODE_ENV = 'development';
 
 const buildNodeFile = (file, out) => {
   return esBuild.build({
@@ -14,9 +15,9 @@ const buildNodeFile = (file, out) => {
     outfile: out,
     platform: 'node',
     target: 'node14.16',
-    external: ['electron', 'chokidar']
-  })
-}
+    external: ['electron', 'chokidar'],
+  });
+};
 
 const startElectron = () => {
   logger.info('starting Electron...');
@@ -26,16 +27,16 @@ const startElectron = () => {
       projectDir,
       'node_modules',
       '.bin',
-      process.platform === 'win32' ? 'electron.cmd' : 'electron'
+      process.platform === 'win32' ? 'electron.cmd' : 'electron',
     ),
     ['build/main.js'],
-    { stdio: 'inherit' }
+    { stdio: 'inherit' },
   );
 
   p.on('exit', () => {
     process.exit(0);
   });
-}
+};
 
 (async () => {
   const config = await loadConfiguration();

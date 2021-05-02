@@ -9,7 +9,4 @@ if (!existsSync(path.join(__dirname, '../build'))) {
   mkdirSync(path.join(__dirname, '../build'));
 }
 
-writeFileSync(
-  path.join(__dirname, '../build/version.json'),
-  versionInfoJson
-);
+writeFileSync(path.join(__dirname, '../build/version.json'), versionInfoJson);

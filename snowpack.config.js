@@ -1,11 +1,13 @@
 const projectDir = process.cwd();
+const isProd = process.env.NODE_ENV === 'production';
+
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    "src": { url: '/' },
+    src: { url: '/' },
   },
-  exclude: ["**/src/main/**/*"],
+  exclude: ['**/src/main/**/*'],
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
@@ -27,15 +29,25 @@ module.exports = {
       },
     ],
     [
-      "@snowpack/plugin-babel",
+      '@snowpack/plugin-babel',
       {
-        input: ['.js', '.mjs', '.jsx', '.ts', '.tsx'], 
+        input: ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
         transformOptions: {
-          presets: ["@babel/preset-typescript", "@babel/preset-react"],
-          plugins: ["@babel/plugin-transform-typescript", "@babel/plugin-syntax-flow", "babel-plugin-styled-components"]
-        }
-      }
-    ]
+          presets: ['@babel/preset-typescript', '@babel/preset-react'],
+          plugins: [
+            [
+              'babel-plugin-styled-components',
+              {
+                minify: isProd,
+                transpileTemplateLiterals: isProd,
+                displayName: !isProd,
+                fileName: !isProd,
+              },
+            ],
+          ],
+        },
+      },
+    ],
   ],
   alias: {
     '@universe/shared': './src/shared',
@@ -45,10 +57,8 @@ module.exports = {
     '@universe/renderer/store': './src/renderer/store',
     '@universe/renderer/style': './src/renderer/style',
   },
-  routes: [
-    { "match": "routes", "src": ".*", "dest": "renderer/index.html" },
-  ],
+  routes: [{ match: 'routes', src: '.*', dest: 'renderer/index.html' }],
   devOptions: {
     hmr: true,
-  }
+  },
 };

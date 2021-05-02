@@ -56,8 +56,6 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-flow": "^7.12.13",
-    "@babel/plugin-transform-typescript": "^7.13.0",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
     "@snowpack/plugin-babel": "^2.1.7",

@@ -1,7 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 import externalLinkMask from './assets/images/external-link-mask.png';
 
 const BodyTypography = createGlobalStyle`
+${css`
   p {
     color: ${(props) => props.theme.colors.grey[1]};
     font-size: 12px;
@@ -35,7 +36,8 @@ const BodyTypography = createGlobalStyle`
     -webkit-font-smoothing: subpixel-antialiased;
     transition: 300ms color ${(props) => props.theme.easing.soft};
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
       color: ${(props) => props.theme.colors.gold[1]};
     }
 
@@ -53,11 +55,11 @@ const BodyTypography = createGlobalStyle`
         -webkit-mask-size: contain;
         background-color: ${(props) => props.theme.colors.blue[3]};
         margin-left: 5px;
-        transition: 300ms background-color ${(props) =>
-          props.theme.easing.soft};
+        transition: 300ms background-color ${(props) => props.theme.easing.soft};
       }
 
-      &:hover, &:focus-visible {
+      &:hover,
+      &:focus-visible {
         color: ${(props) => props.theme.colors.blue[1]};
 
         &::after {
@@ -91,6 +93,7 @@ const BodyTypography = createGlobalStyle`
       }
     }
   }
+`}
 `;
 
 export default BodyTypography;

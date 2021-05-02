@@ -1,6 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
 
 const Reset = createGlobalStyle`
+${css`
   body {
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +9,9 @@ const Reset = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  *, *::before,  *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: inherit;
     user-select: none;
   }
@@ -34,6 +37,7 @@ const Reset = createGlobalStyle`
     display: block;
     max-width: 100%;
   }
+`}
 `;
 
 export default Reset;

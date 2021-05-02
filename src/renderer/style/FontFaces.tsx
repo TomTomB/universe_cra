@@ -1,3 +1,4 @@
+import { createGlobalStyle, css } from 'styled-components';
 import beaufortBold from './assets/fonts/BeaufortForLoL-Bold.otf';
 import beaufortBoldItalic from './assets/fonts/BeaufortForLoL-BoldItalic.otf';
 import beaufortHeavy from './assets/fonts/BeaufortForLoL-Heavy.otf';
@@ -8,7 +9,6 @@ import beaufortLightItalic from './assets/fonts/BeaufortForLoL-LightItalic.otf';
 import beaufortMedium from './assets/fonts/BeaufortForLoL-Medium.otf';
 import beaufortMediumItalic from './assets/fonts/BeaufortForLoL-MediumItalic.otf';
 import beaufortRegular from './assets/fonts/BeaufortForLoL-Regular.otf';
-import { createGlobalStyle } from 'styled-components';
 import shentox from './assets/fonts/shentox.ttf';
 import shentoxLight from './assets/fonts/shentox-light.ttf';
 import shentoxSemiBold from './assets/fonts/shentox-semibold.ttf';
@@ -20,6 +20,7 @@ import spiegelSemiBold from './assets/fonts/Spiegel-SemiBold.otf';
 import spiegelSemiBoldItalic from './assets/fonts/Spiegel-SemiBoldItalic.otf';
 
 const FontFaces = createGlobalStyle`
+${css`
   @font-face {
     font-family: 'LoL Body';
     font-weight: 400;
@@ -152,6 +153,7 @@ const FontFaces = createGlobalStyle`
     font-style: normal;
     src: url(${shentox}) format('truetype');
   }
+`}
 `;
 
 export default FontFaces;
