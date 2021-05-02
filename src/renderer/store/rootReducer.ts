@@ -7,15 +7,16 @@ import settingsReducer from './slices/settings/settingsSlice';
 import updaterReducer from './slices/updater/updaterSlice';
 
 const rootReducer = (history: History) =>
-  Reduxie.OuterReducer(
-    combineReducers({
-      router: connectRouter(history),
-      counter: counterReducer,
-      settings: settingsReducer,
-      updater: updaterReducer,
-    }),
-  );
+  combineReducers({
+    router: connectRouter(history),
+    counter: counterReducer,
+    settings: settingsReducer,
+    updater: updaterReducer,
+  });
+
+const outerReducer = (history: History) =>
+  Reduxie.OuterReducer(rootReducer(history));
 
 export type RootState = ReturnType<ReturnType<typeof rootReducer>>;
 
-export default rootReducer;
+export default outerReducer;
