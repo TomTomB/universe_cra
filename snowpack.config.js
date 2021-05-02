@@ -1,7 +1,6 @@
 const projectDir = process.cwd();
 const isProd = process.env.NODE_ENV === 'production';
 
-
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
@@ -33,7 +32,10 @@ module.exports = {
       {
         input: ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
         transformOptions: {
-          presets: ['@babel/preset-typescript', '@babel/preset-react'],
+          presets: [
+            '@babel/preset-typescript',
+            ['@babel/preset-react', { development: !isProd }],
+          ],
           plugins: [
             [
               'babel-plugin-styled-components',
