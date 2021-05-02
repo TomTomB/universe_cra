@@ -16,6 +16,10 @@ module.exports = {
     config.resolve.alias['@universe/mocks'] = path.resolve(__dirname, '../src/mocks');
     config.resolve.alias['@universe/renderer/store'] = path.resolve(__dirname, '../src/renderer/store');
     config.resolve.alias['@universe/renderer/style'] = path.resolve(__dirname, '../src/renderer/style');
+    config.resolve.alias['@universe/renderer/uikit/core'] = path.resolve(__dirname, '../src/renderer/domain/uikit/core');
+    config.resolve.alias['@universe/renderer/uikit/common'] = path.resolve(__dirname, '../src/renderer/domain/uikit/common');
+    config.resolve.alias['@universe/renderer/uikit/form'] = path.resolve(__dirname, '../src/renderer/domain/uikit/form');
+    config.resolve.alias['@universe/renderer/uikit/webgl'] = path.resolve(__dirname, '../src/renderer/domain/uikit/webgl');
 
     return config;
   },

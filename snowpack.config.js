@@ -58,6 +58,10 @@ module.exports = {
     '@universe/mocks': './src/mocks',
     '@universe/renderer/store': './src/renderer/store',
     '@universe/renderer/style': './src/renderer/style',
+    '@universe/renderer/uikit/core': './src/renderer/domain/uikit/core',
+    '@universe/renderer/uikit/common': './src/renderer/domain/uikit/common',
+    '@universe/renderer/uikit/form': './src/renderer/domain/uikit/form',
+    '@universe/renderer/uikit/webgl': './src/renderer/domain/uikit/webgl',
   },
   routes: [{ match: 'routes', src: '.*', dest: 'renderer/index.html' }],
   devOptions: {

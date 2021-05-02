@@ -19,7 +19,18 @@ render(
           <Styles.Scrollbar />
           <Styles.BodyTypography />
           <Styles.HeadingTypography />
-          <h1>Universe</h1>
+          <h1
+            style={{
+              width: '100vw',
+              height: '100vh',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              margin: '0',
+            }}
+          >
+            Universe
+          </h1>
           {/* <RootView /> */}
         </ThemeProvider>
       </>
