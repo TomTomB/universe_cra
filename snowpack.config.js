@@ -6,7 +6,7 @@ module.exports = {
   mount: {
     src: { url: '/' },
   },
-  exclude: ['**/src/main/**/*'],
+  exclude: ['**/src/main/**/*', '**/*.stories.tsx'],
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
