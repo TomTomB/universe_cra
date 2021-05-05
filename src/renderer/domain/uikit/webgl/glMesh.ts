@@ -364,6 +364,7 @@ export class GlMesh {
     }
 
     if (!this.iBuffer) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       this.iBuffer = this._gl.context.createBuffer()!;
     }
 
@@ -401,6 +402,7 @@ export class GlMesh {
     let result: WebGLBuffer;
 
     if (!attribute.buffer) {
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       result = glContext.createBuffer()!;
       attribute.buffer = result;
     } else {
