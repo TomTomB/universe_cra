@@ -4,7 +4,7 @@ import { FormField } from '../../base';
 import { FramedSelectOption } from './FramedSelectOption';
 import type { FramedSelectProps } from './FramedSelect.types';
 import { NativeSelect } from '../NativeSelect';
-import { ScrollContainer } from '@uikit/components/base';
+import { ScrollContainer } from '@universe/renderer/uikit/common';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useSelectBehavior } from '../useSelectBehavior';
 import { useTransition } from 'react-spring';

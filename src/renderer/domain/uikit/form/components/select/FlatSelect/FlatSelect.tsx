@@ -4,7 +4,7 @@ import { FlatSelectOption } from './FlatSelectOption';
 import { FlatSelectOptionGroup } from './FlatSelectOptionGroup';
 import type { FlatSelectProps } from './FlatSelect.types';
 import { NativeSelect } from '../NativeSelect';
-import { ScrollContainer } from '@uikit/components/base';
+import { ScrollContainer } from '@universe/renderer/uikit/common';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useSelectBehavior } from '../useSelectBehavior';
 import { useTransition } from 'react-spring';

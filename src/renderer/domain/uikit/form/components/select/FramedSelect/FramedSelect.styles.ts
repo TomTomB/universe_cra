@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Label } from '../../Label';
-import { StyledScrollContainer } from '@uikit/components/base';
+import { ScrollContainerStyles } from '@universe/renderer/uikit/common';
 import { animated } from 'react-spring';
 import dropdownArrow from '../assets/images/up-down-arrow.png';
 import dropdownArrowLocked from '../assets/images/up-down-arrow-locked.png';
@@ -71,7 +71,7 @@ export const OptionsContainer = styled.dd<{ openUpward: boolean }>`
   overflow: hidden;
   background: ${(props) => props.theme.colors.black};
 
-  ${StyledScrollContainer} {
+  ${ScrollContainerStyles.StyledScrollContainer} {
     max-height: 150px;
 
     .os-content-glue {

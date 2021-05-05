@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
+import { ScrollContainerStyles } from '@universe/renderer/uikit/common';
 import { animated } from 'react-spring';
 import upDownArrow from '../assets/images/up-down-arrow.png';
 import upDownArrowLocked from '../assets/images/up-down-arrow-locked.png';
-// import {  StyledScrollContainer } from '@uikit/components/base';
 
 export const OptionsContainer = styled.div<{
   openUpward: boolean;
@@ -20,7 +20,7 @@ export const OptionsContainer = styled.div<{
   width: 400px;
   max-width: 400px;
 
-  ${StyledScrollContainer} {
+  ${ScrollContainerStyles.StyledScrollContainer} {
     max-height: 150px;
 
     .os-content-glue {
