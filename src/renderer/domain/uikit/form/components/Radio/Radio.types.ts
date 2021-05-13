@@ -10,3 +10,6 @@ export interface RadioProps {
   register?: UseFormRegister<any>;
   onChange?: (event?: React.ChangeEvent<HTMLInputElement>) => void;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _SNOWPACK = true;

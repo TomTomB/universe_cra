@@ -11,3 +11,6 @@ export interface TextareaProps {
   error?: FieldError;
   spellcheck?: boolean;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _SNOWPACK = true;

@@ -14,3 +14,6 @@ export interface RangeProps {
   register?: UseFormRegister<any>;
   onChange?: (value: number) => void;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _SNOWPACK = true;

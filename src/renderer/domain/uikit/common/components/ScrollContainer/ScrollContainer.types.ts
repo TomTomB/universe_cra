@@ -8,3 +8,6 @@ export interface ScrollContainerProps {
   observeLeftSelector?: string;
   observeRightSelector?: string;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _SNOWPACK = true;

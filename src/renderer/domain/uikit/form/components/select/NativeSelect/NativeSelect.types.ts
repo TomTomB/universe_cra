@@ -10,3 +10,6 @@ export interface NativeSelectProps {
   register?: UseFormRegister<any>;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _SNOWPACK = true;
