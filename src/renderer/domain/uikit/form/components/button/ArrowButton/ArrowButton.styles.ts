@@ -40,6 +40,7 @@ export const StyledArrowButton = styled.button<{ rotated?: boolean }>`
   appearance: none;
   cursor: pointer;
   position: relative;
+  outline: none;
 
   ${({ rotated }) =>
     rotated &&
@@ -47,7 +48,7 @@ export const StyledArrowButton = styled.button<{ rotated?: boolean }>`
       transform: rotate(180deg);
     `};
 
-  &:hover ${Hover} {
+  &:hover ${Hover}, &:focus-visible ${Hover} {
     opacity: 1;
   }
 
