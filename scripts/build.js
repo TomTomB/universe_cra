@@ -15,7 +15,7 @@ const buildNodeFile = (file, out) => {
     target: 'node14.16',
     treeShaking: true,
     minify: true,
-    external: ['electron'],
+    external: ['electron', 'chokidar', 'fsevents'],
   });
 };
 

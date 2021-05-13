@@ -15,7 +15,7 @@ const buildNodeFile = (file, out) => {
     outfile: out,
     platform: 'node',
     target: 'node14.16',
-    external: ['electron', 'chokidar'],
+    external: ['electron', 'chokidar', 'fsevents'],
   });
 };
 
