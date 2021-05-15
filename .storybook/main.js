@@ -20,6 +20,7 @@ module.exports = {
     config.resolve.alias['@universe/renderer/uikit/common'] = path.resolve(__dirname, '../src/renderer/domain/uikit/common');
     config.resolve.alias['@universe/renderer/uikit/form'] = path.resolve(__dirname, '../src/renderer/domain/uikit/form');
     config.resolve.alias['@universe/renderer/uikit/webgl'] = path.resolve(__dirname, '../src/renderer/domain/uikit/webgl');
+    config.resolve.alias['@universe/renderer/uikit/gamedata'] = path.resolve(__dirname, '../src/renderer/domain/uikit/gamedata');
 
     return config;
   },

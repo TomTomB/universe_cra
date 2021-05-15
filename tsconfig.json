@@ -21,7 +21,6 @@
       "@universe/mocks/*": ["src/mocks/*"],
       "@universe/renderer/store/*": ["src/renderer/store/*"],
       "@universe/renderer/store": ["src/renderer/store/index.ts"],
-      "@universe/renderer/style/*": ["src/renderer/style/*"],
       "@universe/renderer/style": ["src/renderer/style/index.ts"],
       "@universe/renderer/uikit/core": [
         "src/renderer/domain/uikit/core/index.ts"
@@ -34,6 +33,9 @@
       ],
       "@universe/renderer/uikit/webgl": [
         "src/renderer/domain/uikit/webgl/index.ts"
+      ],
+      "@universe/renderer/uikit/gamedata": [
+        "src/renderer/domain/uikit/gamedata/index.ts"
       ]
     }
   }

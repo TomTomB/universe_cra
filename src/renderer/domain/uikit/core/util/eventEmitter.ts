@@ -1,7 +1,7 @@
 type Listener = (...args: any[]) => void;
 type Events = { [event: string]: Listener[] };
 
-class EventEmitter<T extends string> {
+export class EventEmitter<T extends string> {
   private readonly _events: Events = {};
 
   on(event: T, listener: Listener): () => void {
@@ -20,7 +20,7 @@ class EventEmitter<T extends string> {
 
   removeAllListeners(): void {
     Object.keys(this._events).forEach((event: string) =>
-      this._events[event].splice(0, this._events[event].length)
+      this._events[event].splice(0, this._events[event].length),
     );
   }
 
@@ -29,7 +29,7 @@ class EventEmitter<T extends string> {
       return;
     }
 
-    [...this._events[event]].forEach(listener => listener.apply(this, args));
+    [...this._events[event]].forEach((listener) => listener.apply(this, args));
   }
 
   once(event: T, listener: Listener): void {
@@ -39,5 +39,3 @@ class EventEmitter<T extends string> {
     });
   }
 }
-
-export default EventEmitter;

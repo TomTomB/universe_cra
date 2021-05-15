@@ -62,6 +62,7 @@ module.exports = {
     '@universe/renderer/uikit/common': './src/renderer/domain/uikit/common',
     '@universe/renderer/uikit/form': './src/renderer/domain/uikit/form',
     '@universe/renderer/uikit/webgl': './src/renderer/domain/uikit/webgl',
+    '@universe/renderer/uikit/gamedata': './src/renderer/domain/uikit/gamedata',
   },
   routes: [{ match: 'routes', src: '.*', dest: 'renderer/index.html' }],
   devOptions: {
