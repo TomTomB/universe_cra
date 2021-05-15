@@ -7,7 +7,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": ["@typescript-eslint", "react", "sort-imports-es6-autofix"],
   "settings": {
     "react": {
       "createClass": "createReactClass",
@@ -29,14 +29,12 @@
     "linkComponents": ["Hyperlink", { "name": "Link", "linkAttribute": "to" }]
   },
   "rules": {
-    "sort-imports": [
-      "error",
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      2,
       {
         "ignoreCase": false,
-        "ignoreDeclarationSort": false,
         "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
-        "allowSeparatedGroups": false
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
     ],
     "react/prop-types": "off",

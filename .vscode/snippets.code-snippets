@@ -1,0 +1,12 @@
+{
+  "importComponentStyles": {
+    "scope": "typescriptreact",
+    "prefix": "uni-s",
+    "body": "import * as E from './${TM_FILENAME/(.*)\\..+$/$1/}.styles'"
+  },
+  "exportComponent": {
+    "scope": "typescript",
+    "prefix": "uni-ex",
+    "body": "export * from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}'; \nexport * as ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}Styles from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}.styles'; \nexport * as ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}Types from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}.types'; \n"
+  }
+}

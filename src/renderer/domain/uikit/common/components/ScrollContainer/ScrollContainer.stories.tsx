@@ -2,11 +2,11 @@ import {
   InnerScrollContainer,
   StyledScrollContainer,
 } from './ScrollContainer.styles';
-import type { Meta, Story } from '@storybook/react';
-import React from 'react';
 import { ScrollContainer } from './ScrollContainer';
-import type { ScrollContainerProps } from './ScrollContainer.types';
+import React from 'react';
 import styled from 'styled-components';
+import type { Meta, Story } from '@storybook/react';
+import type { ScrollContainerProps } from './ScrollContainer.types';
 
 export default {
   title: 'UiKit/Common/ScrollContainer',
