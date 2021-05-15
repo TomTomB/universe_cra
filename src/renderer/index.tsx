@@ -1,6 +1,6 @@
 import * as Styles from '@universe/renderer/style';
-import { StyleSheetManager, ThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
+import { StyleSheetManager, ThemeProvider } from 'styled-components';
 import React from 'react';
 // import RootView from './modules/Shell/views/Root';
 // import UpdaterIPC from '@core/components/UpdaterIPC';

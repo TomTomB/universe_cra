@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { FramedSelect } from './FramedSelect';
-import type { FramedSelectProps } from './FramedSelect.types';
 import React from 'react';
+import type { FramedSelectProps } from './FramedSelect.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Select/Framed',

@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { Input } from './Input';
-import type { InputProps } from './Input.types';
 import React from 'react';
+import type { InputProps } from './Input.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Input',

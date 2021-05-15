@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { PrimaryMagicButton } from './PrimaryMagicButton';
-import type { PrimaryMagicButtonProps } from './PrimaryMagicButton.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { PrimaryMagicButtonProps } from './PrimaryMagicButton.types';
 
 export default {
   title: 'UiKit/Form/Button/PrimaryMagic',

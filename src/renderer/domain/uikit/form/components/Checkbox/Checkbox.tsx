@@ -1,7 +1,7 @@
 import * as E from './Checkbox.styles';
-import type * as T from './Checkbox.types';
 import React, { FC } from 'react';
 import classNames from 'classnames';
+import type * as T from './Checkbox.types';
 
 export const Checkbox: FC<T.CheckboxProps> = ({
   id,

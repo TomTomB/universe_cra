@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { FlatSelect } from './FlatSelect';
-import type { FlatSelectProps } from './FlatSelect.types';
 import React from 'react';
+import type { FlatSelectProps } from './FlatSelect.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Select/Flat',

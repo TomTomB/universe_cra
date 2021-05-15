@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { Label } from './Label';
-import type { LabelProps } from './Label.types';
 import React from 'react';
+import type { LabelProps } from './Label.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Label',

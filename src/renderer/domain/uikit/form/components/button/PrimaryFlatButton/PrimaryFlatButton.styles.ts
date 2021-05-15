@@ -1,7 +1,7 @@
-import styled, { css, keyframes } from 'styled-components';
-import type { StyledPrimaryFlatButtonProps } from './PrimaryFlatButton.types';
 import externalLinkMask from './assets/images/external-link-mask.png';
 import sheen from './assets/images/sheen.png';
+import styled, { css, keyframes } from 'styled-components';
+import type { StyledPrimaryFlatButtonProps } from './PrimaryFlatButton.types';
 
 export const hoverTextShadowAnimation = keyframes`
 	0% {

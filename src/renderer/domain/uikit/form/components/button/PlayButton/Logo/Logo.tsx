@@ -1,12 +1,12 @@
-import { LogoAnim, PlayButtonLogoProps } from './Logo.types';
-import React, { FC, useEffect, useRef, useState } from 'react';
 import { Animation } from '@universe/renderer/uikit/form';
+import { LogoAnim, PlayButtonLogoProps } from './Logo.types';
+import { PlayButtonState } from '../PlayButton.types';
+import { useCompare } from '@universe/renderer/uikit/core';
 import LeagueLogoIntro from './assets/video/league-logo-intro.webm';
 import LeagueLogoLoopActive from './assets/video/league-logo-loop-active.webm';
 import LeagueLogoLoopIdle from './assets/video/league-logo-loop-idle.webm';
 import LeagueLogoMagic from './assets/video/league-logo-magic.webm';
-import { PlayButtonState } from '../PlayButton.types';
-import { useCompare } from '@universe/renderer/uikit/core';
+import React, { FC, useEffect, useRef, useState } from 'react';
 
 export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
   playPatcherIntro,

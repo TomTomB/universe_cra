@@ -1,12 +1,12 @@
 import * as E from './Patcher.styles';
-import React, { FC, useEffect, useRef } from 'react';
-import type { PlayButtonPatcherProps } from './Patcher.types';
 import { PlayButtonState } from '../PlayButton.types';
+import { useCompare } from '@universe/renderer/uikit/core';
 import ProgressBarBorderLoop from './assets/video/progress-bar-border-loop.webm';
 import ProgressBarMainLoop from './assets/video/progress-bar-main-loop.webm';
 import ProgressBarTipIntro from './assets/video/progress-bar-tip-intro.webm';
 import ProgressBarTipLoop from './assets/video//progress-bar-tip-loop.webm';
-import { useCompare } from '@universe/renderer/uikit/core';
+import React, { FC, useEffect, useRef } from 'react';
+import type { PlayButtonPatcherProps } from './Patcher.types';
 
 export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({
   playPatcherIntro,

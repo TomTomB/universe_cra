@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { PrimaryFlatButton } from './PrimaryFlatButton';
-import type { PrimaryFlatButtonProps } from './PrimaryFlatButton.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { PrimaryFlatButtonProps } from './PrimaryFlatButton.types';
 
 export default {
   title: 'UiKit/Form/Button/PrimaryFlat',

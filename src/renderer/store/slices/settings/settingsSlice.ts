@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import type { RootState } from '../../rootReducer';
 import { generateId } from '@universe/core';
+import type { RootState } from '../../rootReducer';
 
 export interface SettingsSliceState {
   playLoginAnimations: boolean;

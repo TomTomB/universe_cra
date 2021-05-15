@@ -5,9 +5,9 @@ import * as fs from 'fs';
 import * as util from 'util';
 import { COMMAND, INSTALL_REGEX } from './constants';
 import { FSWatcher, watch } from 'chokidar';
-import type { Credentials } from '@universe/types/lcu';
 import { Window } from '../util';
 import log from '../util/logger';
+import type { Credentials } from '@universe/types/lcu';
 
 export default class LCUConnector {
   private exec = util.promisify(cp.exec);

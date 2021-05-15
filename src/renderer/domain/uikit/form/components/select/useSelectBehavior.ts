@@ -1,7 +1,7 @@
+import { generateId } from '@universe/core';
 import { useClickOutside, useCompare } from '@universe/renderer/uikit/core';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { SelectOption } from './select.types';
-import { generateId } from '@universe/core';
 
 const getOption = ({
   selectId,

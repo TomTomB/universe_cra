@@ -2,10 +2,10 @@ import * as E from './Input.styles';
 import React, { FC, useRef, useState } from 'react';
 // import { Tooltip, TooltipText } from '@uikit/components/tooltip';
 import { FormField } from '../base';
-import type { InputProps } from './Input.types';
-import classNames from 'classnames';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useTransition } from 'react-spring';
+import classNames from 'classnames';
+import type { InputProps } from './Input.types';
 
 export const Input: FC<InputProps> = ({
   id,

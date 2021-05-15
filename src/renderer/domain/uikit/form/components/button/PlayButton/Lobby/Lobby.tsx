@@ -1,14 +1,14 @@
 import * as E from './Lobby.styles';
-import React, { FC, useEffect, useRef } from 'react';
+import { PlayButtonState } from '../PlayButton.types';
+import { useCompare } from '@universe/renderer/uikit/core';
 import LobbyHoverIntro from './assets/video/lobby-button-hover-intro.webm';
 import LobbyHoverLoop from './assets/video/lobby-button-hover-loop.webm';
 import LobbyHoverOutro from './assets/video/lobby-button-hover-outro.webm';
 import LobbyIntro from './assets/video/lobby-button-intro.webm';
 import LobbyMagicRelease from './assets/video/lobby-button-magic-release.webm';
 import LobbyRelease from './assets/video/lobby-button-release.webm';
+import React, { FC, useEffect, useRef } from 'react';
 import type { PlayButtonLobbyProps } from './Lobby.types';
-import { PlayButtonState } from '../PlayButton.types';
-import { useCompare } from '@universe/renderer/uikit/core';
 
 export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
   buttonState,

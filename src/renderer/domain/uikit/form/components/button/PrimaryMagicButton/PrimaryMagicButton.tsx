@@ -6,8 +6,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import type { PrimaryMagicButtonProps } from './PrimaryMagicButton.types';
 import classNames from 'classnames';
+import type { PrimaryMagicButtonProps } from './PrimaryMagicButton.types';
 
 export const PrimaryMagicButton: FC<
   PropsWithChildren<PrimaryMagicButtonProps>

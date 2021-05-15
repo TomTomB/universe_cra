@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
 import { ScrollContainerStyles } from '@universe/renderer/uikit/common';
 import { animated } from 'react-spring';
+import styled, { css } from 'styled-components';
 import upDownArrow from '../assets/images/up-down-arrow.png';
 import upDownArrowLocked from '../assets/images/up-down-arrow-locked.png';
 

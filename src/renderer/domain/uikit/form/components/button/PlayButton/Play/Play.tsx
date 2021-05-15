@@ -1,5 +1,6 @@
 import * as E from './Play.styles';
-import React, { FC, useEffect, useRef, useState } from 'react';
+import { PlayButtonState } from '../PlayButton.types';
+import { useCompare } from '@universe/renderer/uikit/core';
 import LobbyToPlay from './assets/video/lobby-button-to-play-button.webm';
 import PatcherToPlay from './assets/video/patcher-to-play-button-enabled.webm';
 import PlayButtonEnabledIntro from './assets/video/play-button-enabled-intro.webm';
@@ -7,10 +8,9 @@ import PlayButtonHoverIntro from './assets/video/play-button-hover-intro.webm';
 import PlayButtonHoverLoop from './assets/video/play-button-hover-loop.webm';
 import PlayButtonHoverOutro from './assets/video/play-button-hover-outro.webm';
 import PlayButtonMagicRelease from './assets/video/play-button-magic-release.webm';
-import type { PlayButtonPlayProps } from './Play.types';
 import PlayButtonRelease from './assets/video/play-button-release.webm';
-import { PlayButtonState } from '../PlayButton.types';
-import { useCompare } from '@universe/renderer/uikit/core';
+import React, { FC, useEffect, useRef, useState } from 'react';
+import type { PlayButtonPlayProps } from './Play.types';
 
 export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
   buttonState,

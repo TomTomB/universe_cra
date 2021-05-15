@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { Range } from './Range';
-import type { RangeProps } from './Range.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { RangeProps } from './Range.types';
 
 export default {
   title: 'UiKit/Form/Range',

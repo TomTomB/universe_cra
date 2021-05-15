@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { PurchaseButton } from './PurchaseButton';
-import type { PurchaseButtonProps } from './PurchaseButton.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { PurchaseButtonProps } from './PurchaseButton.types';
 
 export default {
   title: 'UiKit/Form/Button/Purchase',

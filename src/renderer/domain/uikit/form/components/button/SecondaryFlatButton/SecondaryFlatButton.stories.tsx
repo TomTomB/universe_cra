@@ -1,6 +1,6 @@
-import type { Meta, Story } from '@storybook/react';
-import React from 'react';
 import { SecondaryFlatButton } from './SecondaryFlatButton';
+import React from 'react';
+import type { Meta, Story } from '@storybook/react';
 import type { SecondaryFlatButtonProps } from './SecondaryFlatButton.types';
 
 export default {

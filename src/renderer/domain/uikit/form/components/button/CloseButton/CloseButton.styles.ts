@@ -1,5 +1,3 @@
-import styled, { css } from 'styled-components';
-import type { StyledCloseButtonProps } from './CloseButton.types';
 import iconAdd from './assets/images/icon_add.png';
 import iconArrowRight from './assets/images/arrow-right.png';
 import iconBack from './assets/images/icon_back.png';
@@ -15,6 +13,8 @@ import iconPlus from './assets/images/icon_plus.png';
 import iconRefresh from './assets/images/refresh.png';
 import iconSettings from './assets/images/icon_settings.png';
 import iconX from './assets/images/x-icon.png';
+import styled, { css } from 'styled-components';
+import type { StyledCloseButtonProps } from './CloseButton.types';
 
 export const CloseIcon = styled.div<StyledCloseButtonProps>`
   width: 10px;

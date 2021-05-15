@@ -1,13 +1,13 @@
 import * as E from './FramedSelect.styles';
-import React, { FC } from 'react';
 import { FormField } from '../../base';
 import { FramedSelectOption } from './FramedSelectOption';
-import type { FramedSelectProps } from './FramedSelect.types';
 import { NativeSelect } from '../NativeSelect';
 import { ScrollContainer } from '@universe/renderer/uikit/common';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useSelectBehavior } from '../useSelectBehavior';
 import { useTransition } from 'react-spring';
+import React, { FC } from 'react';
+import type { FramedSelectProps } from './FramedSelect.types';
 
 export const FramedSelect: FC<FramedSelectProps> = ({
   items,

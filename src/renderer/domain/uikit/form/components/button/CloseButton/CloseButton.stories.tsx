@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { CloseButton } from './CloseButton';
-import type { CloseButtonProps } from './CloseButton.types';
 import React from 'react';
+import type { CloseButtonProps } from './CloseButton.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Button/Close',

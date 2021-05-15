@@ -1,6 +1,6 @@
-import type { Meta, Story } from '@storybook/react';
-import React from 'react';
 import { Textarea } from './Textarea';
+import React from 'react';
+import type { Meta, Story } from '@storybook/react';
 import type { TextareaProps } from './Textarea.types';
 
 export default {

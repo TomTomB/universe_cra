@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { Radio } from './Radio';
-import type { RadioProps } from './Radio.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { RadioProps } from './Radio.types';
 
 export default {
   title: 'UiKit/Form/Radio',

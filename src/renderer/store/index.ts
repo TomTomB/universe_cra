@@ -1,9 +1,9 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import Reduxie from 'reduxie';
 import { createHashHistory } from 'history';
-import rootReducer from './rootReducer';
 import { routerMiddleware } from 'connected-react-router';
 import { useDispatch } from 'react-redux';
+import Reduxie from 'reduxie';
+import rootReducer from './rootReducer';
 
 export const history = createHashHistory();
 

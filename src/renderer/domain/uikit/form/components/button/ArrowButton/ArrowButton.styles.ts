@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components';
 import borderArrowClick from './assets/images/border-arrow-click.png';
 import borderArrowDisabled from './assets/images/border-arrow-disabled.png';
 import borderArrowHover from './assets/images/border-arrow-hover.png';
 import borderArrowUp from './assets/images/border-arrow-up.png';
+import styled, { css } from 'styled-components';
 
 export const ButtonStateBase = styled.div`
   position: absolute;

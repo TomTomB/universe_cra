@@ -1,9 +1,9 @@
 import * as E from './Frame.styles';
-import React, { FC, useEffect, useRef, useState } from 'react';
-import PatcherFrameIntro from './assets/video/patcher-frame-intro.webm';
-import type { PlayButtonFrameProps } from './Frame.types';
 import { PlayButtonState } from '../PlayButton.types';
 import { useCompare } from '@universe/renderer/uikit/core';
+import PatcherFrameIntro from './assets/video/patcher-frame-intro.webm';
+import React, { FC, useEffect, useRef, useState } from 'react';
+import type { PlayButtonFrameProps } from './Frame.types';
 
 export const PlayButtonFrame: FC<PlayButtonFrameProps> = ({
   playPatcherIntro,

@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
-import type { StyledFramedSelectOptionProps } from './FramedSelectOption.types';
 import dropdownCheck from '../../assets/images/dropdown-check.png';
 import dropdownSelectDot from '../../assets/images/dropdown-select-dot.png';
+import styled, { css } from 'styled-components';
+import type { StyledFramedSelectOptionProps } from './FramedSelectOption.types';
 
 export const StyledFramedSelectOption = styled.div<StyledFramedSelectOptionProps>`
   align-items: center;

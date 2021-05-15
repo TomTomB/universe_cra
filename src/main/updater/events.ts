@@ -1,8 +1,8 @@
 import { Logger, Window } from '../util';
-import type { DownloadProgress } from '@universe/types/electron';
-import type { UpdateInfo } from 'electron-updater';
 import { autoUpdater } from '@imjs/electron-differential-updater';
 import { ipcMain } from 'electron';
+import type { DownloadProgress } from '@universe/types/electron';
+import type { UpdateInfo } from 'electron-updater';
 
 ipcMain.on('install-update-and-restart', () => {
   Logger.info('UPDATER > install-update-and-restart');

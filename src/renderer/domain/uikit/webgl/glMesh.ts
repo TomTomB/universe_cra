@@ -1,6 +1,6 @@
-import type { Gl } from './gl';
 import { GlOption } from './types';
 import { vec3 } from 'gl-matrix';
+import type { Gl } from './gl';
 
 export type DrawType = GlOption.DYNAMIC_DRAW | GlOption.STATIC_DRAW;
 

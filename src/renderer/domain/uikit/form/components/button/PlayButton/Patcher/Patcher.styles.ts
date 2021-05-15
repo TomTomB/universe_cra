@@ -1,5 +1,5 @@
-import styled, { css, keyframes } from 'styled-components';
 import { AnimationWithTransition } from '@universe/renderer/uikit/form';
+import styled, { css, keyframes } from 'styled-components';
 import type { ProgressContainerProps } from './Patcher.types';
 
 export const patcherShowAnimation = keyframes`

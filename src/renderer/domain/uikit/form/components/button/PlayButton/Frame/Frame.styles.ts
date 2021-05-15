@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
 import { Animation } from '@universe/renderer/uikit/form';
 import PlayButtonFrameImage from './assets/images/play-button-frame-default.png';
+import styled, { css } from 'styled-components';
 
 export const Frame = styled.div<{ show: boolean }>`
   position: absolute;

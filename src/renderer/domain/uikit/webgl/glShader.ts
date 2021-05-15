@@ -1,7 +1,7 @@
-import type { Gl } from './gl';
 import { GlOption } from './types';
 import basicFragmentShader from './shaders/basic.frag.glsl';
 import basicVertexShader from './shaders/basic.vert.glsl';
+import type { Gl } from './gl';
 
 export interface GlShaderParameter {
   name: string;

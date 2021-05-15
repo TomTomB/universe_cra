@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { ArrowButton } from './ArrowButton';
-import type { ArrowButtonProps } from './ArrowButton.types';
 import React from 'react';
+import type { ArrowButtonProps } from './ArrowButton.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Button/Arrow',

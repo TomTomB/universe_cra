@@ -1,10 +1,10 @@
 import { FlatSelect } from './FlatSelect';
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { expect } from 'chai';
 import { render } from '@testing-library/react';
 import { theme } from '@universe/renderer/style';
 import { useForm } from 'react-hook-form';
+import React from 'react';
 
 describe('FlatSelect', () => {
   it('should render', () => {

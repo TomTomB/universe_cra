@@ -1,6 +1,6 @@
+import dropdownCheck from '../../assets/images/dropdown-check.png';
 import styled, { css } from 'styled-components';
 import type { StyledFlatSelectOptionProps } from './FlatSelectOption.types';
-import dropdownCheck from '../../assets/images/dropdown-check.png';
 
 export const StyledFlatSelectOption = styled.div<StyledFlatSelectOptionProps>`
   font-family: LoL Display;

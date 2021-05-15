@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { PrimaryReplayButton } from './PrimaryReplayButton';
-import type { PrimaryReplayButtonProps } from './PrimaryReplayButton.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
+import type { PrimaryReplayButtonProps } from './PrimaryReplayButton.types';
 
 export default {
   title: 'UiKit/Form/Button/PrimaryReplay',

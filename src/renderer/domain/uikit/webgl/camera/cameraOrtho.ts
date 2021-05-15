@@ -1,5 +1,5 @@
-import { mat4, vec3 } from 'gl-matrix';
 import { Camera } from './camera';
+import { mat4, vec3 } from 'gl-matrix';
 
 export class CameraOrtho extends Camera {
   left!: number;

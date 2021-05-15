@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
-import { PlayButtonProps, PlayButtonState } from './PlayButton.types';
 import { PlayButton } from './PlayButton';
+import { PlayButtonProps, PlayButtonState } from './PlayButton.types';
 import React from 'react';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Button/Play',

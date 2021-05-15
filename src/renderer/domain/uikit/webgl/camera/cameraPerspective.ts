@@ -1,6 +1,6 @@
-import { mat4, vec3 } from 'gl-matrix';
 import { Camera } from './camera';
 import { Ray } from '../ray';
+import { mat4, vec3 } from 'gl-matrix';
 
 export class CameraPerspective extends Camera {
   private _fov!: number;

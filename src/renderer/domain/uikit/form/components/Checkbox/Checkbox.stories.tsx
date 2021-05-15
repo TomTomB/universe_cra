@@ -1,7 +1,7 @@
-import type { Meta, Story } from '@storybook/react';
 import { Checkbox } from './Checkbox';
-import type { CheckboxProps } from './Checkbox.types';
 import React from 'react';
+import type { CheckboxProps } from './Checkbox.types';
+import type { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'UiKit/Form/Checkbox',
