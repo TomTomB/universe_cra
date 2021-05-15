@@ -41,6 +41,7 @@
     "caitlynpulsefire",
     "clearall",
     "cond",
+    "darkstar",
     "dianabloodmoon",
     "eslintignore",
     "fullscreenable",
@@ -48,6 +49,7 @@
     "gamedata",
     "glsl",
     "immer",
+    "irelia",
     "kaisa",
     "opentype",
     "overlayscrollbars",
@@ -57,6 +59,7 @@
     "shentox",
     "spritesheet",
     "starguardian",
+    "starguardians",
     "truetype",
     "uikit",
     "ungrouped",
@@ -65,6 +68,8 @@
     "webgl",
     "webm",
     "webp",
+    "xayahrakan",
+    "xinzhaodragonslayer",
     "xstate",
     "zustand"
   ]

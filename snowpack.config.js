@@ -37,6 +37,7 @@ module.exports = {
             ['@babel/preset-react', { development: !isProd }],
           ],
           plugins: [
+            '@babel/plugin-proposal-class-properties',
             [
               'babel-plugin-styled-components',
               {
