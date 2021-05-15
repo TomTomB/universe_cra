@@ -38,6 +38,16 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
       return;
     }
 
+    if (
+      !patcherToPlayElem.current ||
+      !playEnabledIntroElem.current ||
+      !lobbyToPlayElem.current ||
+      !playReleaseElem.current ||
+      !playReleaseMagicElem.current
+    ) {
+      return;
+    }
+
     switch (buttonState.curr) {
       case PlayButtonState.PATCHER:
         setTransitionToPlayEnded(false);
@@ -47,28 +57,28 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
       case PlayButtonState.PLAY:
         if (buttonState.prev === PlayButtonState.PATCHER && !disabled) {
           setShowPatcherToPlay(true);
-          patcherToPlayElem.current!.currentTime = 0;
-          patcherToPlayElem.current!.play();
+          patcherToPlayElem.current.currentTime = 0;
+          patcherToPlayElem.current.play();
         } else if (buttonState.prev === PlayButtonState.PLAY_DISABLED) {
-          playEnabledIntroElem.current!.currentTime = 0;
-          playEnabledIntroElem.current!.play();
+          playEnabledIntroElem.current.currentTime = 0;
+          playEnabledIntroElem.current.play();
         } else if (
           buttonState.prev === PlayButtonState.LOBBY_DISABLED ||
           buttonState.prev === PlayButtonState.LOBBY
         ) {
           setShowLobbyToPlay(true);
-          lobbyToPlayElem.current!.currentTime = 0;
-          lobbyToPlayElem.current!.play();
+          lobbyToPlayElem.current.currentTime = 0;
+          lobbyToPlayElem.current.play();
         }
 
         break;
 
       case PlayButtonState.PLAY_DISABLED:
         if (buttonState.prev === PlayButtonState.PLAY) {
-          playReleaseElem.current!.currentTime = 0;
-          playReleaseElem.current!.play();
-          playReleaseMagicElem.current!.currentTime = 0;
-          playReleaseMagicElem.current!.play();
+          playReleaseElem.current.currentTime = 0;
+          playReleaseElem.current.play();
+          playReleaseMagicElem.current.currentTime = 0;
+          playReleaseMagicElem.current.play();
         }
 
         break;
@@ -88,9 +98,13 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
   }, [hasButtonStateChanged, buttonState, disabled]);
 
   useEffect(() => {
+    if (!playHoverIntroElem.current) {
+      return;
+    }
+
     if (isHovering) {
-      playHoverIntroElem.current!.currentTime = 0;
-      playHoverIntroElem.current!.play();
+      playHoverIntroElem.current.currentTime = 0;
+      playHoverIntroElem.current.play();
     }
   }, [isHovering]);
 

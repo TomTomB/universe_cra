@@ -33,16 +33,25 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       return;
     }
 
+    if (
+      !logoIntroAnim.current ||
+      !logoLoopActiveAnim.current ||
+      !logoLoopIdleAnim.current ||
+      !logoMagicAnim.current
+    ) {
+      return;
+    }
+
     switch (buttonState.curr) {
       case PlayButtonState.PATCHER:
         if (playPatcherIntro && buttonState.prev === PlayButtonState.HIDDEN) {
           setShownLogoAnim(LogoAnim.INTRO);
-          logoIntroAnim.current!.currentTime = 0;
-          logoIntroAnim.current!.play();
+          logoIntroAnim.current.currentTime = 0;
+          logoIntroAnim.current.play();
         } else {
           setShownLogoAnim(LogoAnim.ACTIVE);
-          logoLoopActiveAnim.current!.currentTime = 0;
-          logoLoopActiveAnim.current!.play();
+          logoLoopActiveAnim.current.currentTime = 0;
+          logoLoopActiveAnim.current.play();
         }
 
         break;
@@ -50,16 +59,16 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       case PlayButtonState.PLAY:
         if (shownLogoAnim !== LogoAnim.IDLE) {
           setShownLogoAnim(LogoAnim.IDLE);
-          logoLoopIdleAnim.current!.currentTime = 0;
-          logoLoopIdleAnim.current!.play();
+          logoLoopIdleAnim.current.currentTime = 0;
+          logoLoopIdleAnim.current.play();
         }
 
         break;
 
       case PlayButtonState.PLAY_DISABLED:
         setShowLogoMagic(true);
-        logoMagicAnim.current!.currentTime = 0;
-        logoMagicAnim.current!.play();
+        logoMagicAnim.current.currentTime = 0;
+        logoMagicAnim.current.play();
 
         if (shownLogoAnim !== LogoAnim.IDLE) {
           setShownLogoAnim(LogoAnim.IDLE);
@@ -69,16 +78,16 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       case PlayButtonState.LOBBY:
         if (shownLogoAnim !== LogoAnim.IDLE) {
           setShownLogoAnim(LogoAnim.IDLE);
-          logoLoopIdleAnim.current!.currentTime = 0;
-          logoLoopIdleAnim.current!.play();
+          logoLoopIdleAnim.current.currentTime = 0;
+          logoLoopIdleAnim.current.play();
         }
         break;
 
       case PlayButtonState.LOBBY_DISABLED:
         if (shownLogoAnim !== LogoAnim.IDLE) {
           setShownLogoAnim(LogoAnim.IDLE);
-          logoLoopIdleAnim.current!.currentTime = 0;
-          logoLoopIdleAnim.current!.play();
+          logoLoopIdleAnim.current.currentTime = 0;
+          logoLoopIdleAnim.current.play();
         }
         break;
 
@@ -99,9 +108,13 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       return;
     }
 
+    if (!logoLoopActiveAnim.current) {
+      return;
+    }
+
     setShownLogoAnim(LogoAnim.ACTIVE);
-    logoLoopActiveAnim.current!.currentTime = 0;
-    logoLoopActiveAnim.current!.play();
+    logoLoopActiveAnim.current.currentTime = 0;
+    logoLoopActiveAnim.current.play();
   }, [logoIntroEnded]);
 
   useEffect(() => {
@@ -109,8 +122,12 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       return;
     }
 
-    logoLoopActiveAnim.current!.currentTime = 0;
-    logoLoopActiveAnim.current!.play();
+    if (!logoLoopActiveAnim.current) {
+      return;
+    }
+
+    logoLoopActiveAnim.current.currentTime = 0;
+    logoLoopActiveAnim.current.play();
     setLogoLoopActiveEnded(false);
   }, [logoLoopActiveEnded]);
 
@@ -119,19 +136,27 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       return;
     }
 
-    logoLoopIdleAnim.current!.currentTime = 0;
-    logoLoopIdleAnim.current!.play();
+    if (!logoLoopIdleAnim.current) {
+      return;
+    }
+
+    logoLoopIdleAnim.current.currentTime = 0;
+    logoLoopIdleAnim.current.play();
     setLogoLoopIdleEnded(false);
   }, [logoLoopIdleEnded]);
 
   useEffect(() => {
+    if (!logoLoopIdleAnim.current || !logoMagicAnim.current) {
+      return;
+    }
+
     if (logoMagicEnded) {
-      logoMagicAnim.current!.currentTime = 0;
+      logoMagicAnim.current.currentTime = 0;
       setShowLogoMagic(false);
       setLogoMagicEnded(false);
 
-      logoLoopIdleAnim.current!.currentTime = 0;
-      logoLoopIdleAnim.current!.play();
+      logoLoopIdleAnim.current.currentTime = 0;
+      logoLoopIdleAnim.current.play();
     }
   }, [logoMagicEnded]);
 

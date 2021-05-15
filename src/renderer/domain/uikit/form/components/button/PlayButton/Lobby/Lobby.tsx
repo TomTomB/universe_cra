@@ -29,6 +29,14 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
       return;
     }
 
+    if (
+      !lobbyIntroElem.current ||
+      !lobbyMagicReleaseElem.current ||
+      !lobbyReleaseElem.current
+    ) {
+      return;
+    }
+
     switch (buttonState.curr) {
       case PlayButtonState.PATCHER:
         break;
@@ -41,18 +49,18 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
 
       case PlayButtonState.LOBBY:
         if (buttonState.prev === PlayButtonState.LOBBY_DISABLED) {
-          lobbyIntroElem.current!.currentTime = 0;
-          lobbyIntroElem.current!.play();
+          lobbyIntroElem.current.currentTime = 0;
+          lobbyIntroElem.current.play();
         }
         break;
 
       case PlayButtonState.LOBBY_DISABLED:
         if (buttonState.prev === PlayButtonState.LOBBY) {
-          lobbyMagicReleaseElem.current!.currentTime = 0;
-          lobbyMagicReleaseElem.current!.play();
+          lobbyMagicReleaseElem.current.currentTime = 0;
+          lobbyMagicReleaseElem.current.play();
 
-          lobbyReleaseElem.current!.currentTime = 0;
-          lobbyReleaseElem.current!.play();
+          lobbyReleaseElem.current.currentTime = 0;
+          lobbyReleaseElem.current.play();
         }
         break;
 
@@ -63,9 +71,13 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
   }, [hasButtonStateChanged, buttonState, disabled]);
 
   useEffect(() => {
+    if (!lobbyHoverIntroElem.current) {
+      return;
+    }
+
     if (isHovering) {
-      lobbyHoverIntroElem.current!.currentTime = 0;
-      lobbyHoverIntroElem.current!.play();
+      lobbyHoverIntroElem.current.currentTime = 0;
+      lobbyHoverIntroElem.current.play();
     }
   }, [isHovering]);
 

@@ -20,11 +20,15 @@ export const PlayButtonFrame: FC<PlayButtonFrameProps> = ({
       return;
     }
 
+    if (!patcherFrameIntroAnim.current) {
+      return;
+    }
+
     switch (buttonState.curr) {
       case PlayButtonState.PATCHER:
         if (playPatcherIntro && buttonState.prev === PlayButtonState.HIDDEN) {
-          patcherFrameIntroAnim.current!.currentTime = 0;
-          patcherFrameIntroAnim.current!.play();
+          patcherFrameIntroAnim.current.currentTime = 0;
+          patcherFrameIntroAnim.current.play();
         }
 
         break;
