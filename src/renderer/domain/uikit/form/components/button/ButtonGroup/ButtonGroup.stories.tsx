@@ -1,4 +1,5 @@
 import { ButtonGroup } from './ButtonGroup';
+import { PrimaryFlatButton } from '../PrimaryFlatButton';
 import React from 'react';
 import type { ButtonGroupProps } from './ButtonGroup.types';
 import type { Meta, Story } from '@storybook/react';
@@ -10,8 +11,8 @@ export default {
 
 const Template: Story<ButtonGroupProps> = (args) => (
   <ButtonGroup {...args}>
-    <button>Button A</button>
-    <button>Button B Lorem</button>
+    <PrimaryFlatButton type="button">Save</PrimaryFlatButton>
+    <PrimaryFlatButton type="button">Discard</PrimaryFlatButton>
   </ButtonGroup>
 );
 
