@@ -1,4 +1,5 @@
-import { Dispatch, createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
+import type { Dispatch} from '@reduxjs/toolkit';
 import type { RootState } from '../../rootReducer';
 
 export interface CounterSliceState {

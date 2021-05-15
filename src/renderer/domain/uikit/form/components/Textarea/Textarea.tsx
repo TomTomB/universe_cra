@@ -2,7 +2,8 @@ import * as E from './Textarea.styles';
 import { FormField } from '../base';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useTransition } from 'react-spring';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { TextareaProps } from './Textarea.types';
 
 export const Textarea: FC<TextareaProps> = ({

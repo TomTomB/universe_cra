@@ -1,4 +1,5 @@
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import type { MutableRefObject} from 'react';
 
 export const useBoundingRect = <T extends HTMLElement>() => {
   const ref = useRef<T | null>(null);

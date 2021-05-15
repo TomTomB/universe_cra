@@ -1,3 +1,5 @@
+export * from './ButtonGroup';
+
 export * from './ArrowButton';
 export * from './CloseButton';
 export * from './PlayButton';

@@ -1,12 +1,13 @@
 import * as E from './PrimaryMagicButton.styles';
 import React, {
-  FC,
-  PropsWithChildren,
   useEffect,
   useRef,
   useState,
 } from 'react';
 import classNames from 'classnames';
+import type {
+  FC,
+  PropsWithChildren} from 'react';
 import type { PrimaryMagicButtonProps } from './PrimaryMagicButton.types';
 
 export const PrimaryMagicButton: FC<

@@ -4,10 +4,11 @@ import * as cp from 'child_process';
 import * as fs from 'fs';
 import * as util from 'util';
 import { COMMAND, INSTALL_REGEX } from './constants';
-import { FSWatcher, watch } from 'chokidar';
 import { Window } from '../util';
+import { watch } from 'chokidar';
 import log from '../util/logger';
 import type { Credentials } from '@universe/types/lcu';
+import type { FSWatcher} from 'chokidar';
 
 export default class LCUConnector {
   private exec = util.promisify(cp.exec);

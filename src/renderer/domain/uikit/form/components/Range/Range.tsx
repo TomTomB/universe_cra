@@ -1,6 +1,7 @@
 import * as E from './Range.styles';
 import { useBoundingRect } from '@universe/renderer/uikit/core';
-import React, { FC, useState } from 'react';
+import React, { useState } from 'react';
+import type { FC} from 'react';
 import type { RangeProps } from './Range.types';
 
 export const Range: FC<RangeProps> = ({

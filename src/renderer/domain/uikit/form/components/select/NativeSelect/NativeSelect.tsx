@@ -1,5 +1,6 @@
 import * as E from './NativeSelect.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { NativeSelectProps } from './NativeSelect.types';
 
 export const NativeSelect: FC<NativeSelectProps> = ({

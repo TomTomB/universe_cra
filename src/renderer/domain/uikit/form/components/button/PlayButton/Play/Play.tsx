@@ -9,7 +9,8 @@ import PlayButtonHoverLoop from './assets/video/play-button-hover-loop.webm';
 import PlayButtonHoverOutro from './assets/video/play-button-hover-outro.webm';
 import PlayButtonMagicRelease from './assets/video/play-button-magic-release.webm';
 import PlayButtonRelease from './assets/video/play-button-release.webm';
-import React, { FC, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import type { FC} from 'react';
 import type { PlayButtonPlayProps } from './Play.types';
 
 export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({

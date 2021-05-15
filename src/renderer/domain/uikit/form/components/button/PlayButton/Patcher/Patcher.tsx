@@ -5,7 +5,8 @@ import ProgressBarBorderLoop from './assets/video/progress-bar-border-loop.webm'
 import ProgressBarMainLoop from './assets/video/progress-bar-main-loop.webm';
 import ProgressBarTipIntro from './assets/video/progress-bar-tip-intro.webm';
 import ProgressBarTipLoop from './assets/video//progress-bar-tip-loop.webm';
-import React, { FC, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import type { FC} from 'react';
 import type { PlayButtonPatcherProps } from './Patcher.types';
 
 export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({

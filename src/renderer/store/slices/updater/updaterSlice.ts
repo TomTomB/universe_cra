@@ -1,5 +1,6 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import type { DownloadProgress } from '../../../../types/electron';
+import type { PayloadAction} from '@reduxjs/toolkit';
 import type { RootState } from '../../rootReducer';
 
 export type UpdaterStatus =

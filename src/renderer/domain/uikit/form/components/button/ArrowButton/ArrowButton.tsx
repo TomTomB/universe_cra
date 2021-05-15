@@ -1,6 +1,7 @@
 import * as E from './ArrowButton.styles';
-import React, { FC } from 'react';
+import React from 'react';
 import type { ArrowButtonProps } from './ArrowButton.types';
+import type { FC } from 'react';
 
 export const ArrowButton: FC<ArrowButtonProps> = ({
   disabled,

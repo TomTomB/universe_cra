@@ -1,11 +1,12 @@
 import {
   GlOption,
-  GlOptionReverse,
-  GlTextureParams,
-  GlTextureSource,
-  GlTextureSourceType,
+  GlOptionReverse
 } from './types';
 import type { Gl } from './gl';
+import type {
+  GlTextureParams,
+  GlTextureSource,
+  GlTextureSourceType} from './types';
 
 export class GlTexture {
   private _gl: Gl;

@@ -1,5 +1,6 @@
 import * as E from './SecondaryFlatButton.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { SecondaryFlatButtonProps } from './SecondaryFlatButton.types';
 
 export const SecondaryFlatButton: FC<SecondaryFlatButtonProps> = ({

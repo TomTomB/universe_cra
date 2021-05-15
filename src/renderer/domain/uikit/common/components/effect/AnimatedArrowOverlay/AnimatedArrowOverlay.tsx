@@ -1,7 +1,8 @@
 import * as E from './AnimatedArrowOverlay.styles';
-import React, { FC, useRef } from 'react';
+import React, { useRef } from 'react';
 import noiseTileAlphaTintLarge from './assets/images/noise-tile-alpha-tint-large.png';
 import type { AnimatedArrowOverlayProps } from './AnimatedArrowOverlay.types';
+import type { FC} from 'react';
 
 export const AnimatedArrowOverlay: FC<AnimatedArrowOverlayProps> = ({
   isCarrot = true,

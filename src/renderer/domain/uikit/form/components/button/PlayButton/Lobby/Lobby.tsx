@@ -7,7 +7,8 @@ import LobbyHoverOutro from './assets/video/lobby-button-hover-outro.webm';
 import LobbyIntro from './assets/video/lobby-button-intro.webm';
 import LobbyMagicRelease from './assets/video/lobby-button-magic-release.webm';
 import LobbyRelease from './assets/video/lobby-button-release.webm';
-import React, { FC, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
+import type { FC} from 'react';
 import type { PlayButtonLobbyProps } from './Lobby.types';
 
 export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({

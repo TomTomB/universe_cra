@@ -1,5 +1,6 @@
 import * as E from './FlatSelectOptionGroup.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { FlatSelectOptionGroupProps } from './FlatSelectOptionGroup.types';
 
 export const FlatSelectOptionGroup: FC<FlatSelectOptionGroupProps> = ({

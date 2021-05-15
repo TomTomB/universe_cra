@@ -1,7 +1,8 @@
 import * as E from './ScrollContainer.styles';
 import { generateId } from '@universe/core';
-import React, { FC, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
+import type { FC} from 'react';
 import type { ScrollContainerProps } from './ScrollContainer.types';
 
 export const ScrollContainer: FC<ScrollContainerProps> = ({

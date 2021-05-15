@@ -1,5 +1,6 @@
 import * as E from './Input.styles';
-import React, { FC, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
+import type { FC} from 'react';
 // import { Tooltip, TooltipText } from '@uikit/components/tooltip';
 import { FormField } from '../base';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';

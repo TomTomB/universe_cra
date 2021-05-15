@@ -1,5 +1,6 @@
 import * as E from './Radio.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { RadioProps } from './Radio.types';
 
 export const Radio: FC<RadioProps> = ({

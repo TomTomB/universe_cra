@@ -6,7 +6,8 @@ import { ScrollContainer } from '@universe/renderer/uikit/common';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useSelectBehavior } from '../useSelectBehavior';
 import { useTransition } from 'react-spring';
-import React, { FC, PropsWithChildren, useMemo } from 'react';
+import React, { useMemo } from 'react';
+import type { FC, PropsWithChildren} from 'react';
 import type { FlatSelectProps } from './FlatSelect.types';
 
 export const FlatSelect: FC<PropsWithChildren<FlatSelectProps>> = ({

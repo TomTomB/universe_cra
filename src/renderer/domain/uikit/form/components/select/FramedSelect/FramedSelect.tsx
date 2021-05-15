@@ -6,7 +6,8 @@ import { ScrollContainer } from '@universe/renderer/uikit/common';
 import { springConfigHarsh } from '@universe/renderer/uikit/core';
 import { useSelectBehavior } from '../useSelectBehavior';
 import { useTransition } from 'react-spring';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { FramedSelectProps } from './FramedSelect.types';
 
 export const FramedSelect: FC<FramedSelectProps> = ({

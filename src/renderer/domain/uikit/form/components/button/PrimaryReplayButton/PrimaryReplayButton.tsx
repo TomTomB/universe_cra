@@ -1,5 +1,6 @@
 import * as E from './PrimaryReplayButton.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { PrimaryReplayButtonProps } from './PrimaryReplayButton.types';
 
 export const PrimaryReplayButton: FC<PrimaryReplayButtonProps> = ({

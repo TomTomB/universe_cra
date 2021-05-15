@@ -1,5 +1,6 @@
 import * as E from './FlatSelectOption.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { FlatSelectOptionProps } from './FlatSelectOption.types';
 
 export const FlatSelectOption: FC<FlatSelectOptionProps> = ({

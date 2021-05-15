@@ -1,5 +1,6 @@
 import * as E from './FramedSelectOption.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { FramedSelectOptionProps } from './FramedSelectOption.types';
 
 export const FramedSelectOption: FC<FramedSelectOptionProps> = ({

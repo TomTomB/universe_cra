@@ -1,5 +1,6 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { generateId } from '@universe/core';
+import type { PayloadAction} from '@reduxjs/toolkit';
 import type { RootState } from '../../rootReducer';
 
 export interface SettingsSliceState {

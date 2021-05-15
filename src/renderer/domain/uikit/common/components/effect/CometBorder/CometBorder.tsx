@@ -1,6 +1,7 @@
 import * as E from './CometBorder.styles';
-import React, { FC } from 'react';
+import React from 'react';
 import type { CometBorderProps } from './CometBorder.types';
+import type { FC } from 'react';
 
 export const CometBorder: FC<CometBorderProps> = ({
   borderColor = 'transparent',

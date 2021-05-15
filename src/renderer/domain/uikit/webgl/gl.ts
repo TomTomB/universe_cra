@@ -1,9 +1,11 @@
-import { GlConfig, GlOption, GlTextureParams } from './types';
 import { GlMesh } from './glMesh';
+import { GlOption } from './types';
 import { GlShader } from './glShader';
 import { GlTexture } from './glTexture';
-import { mat3, mat4, vec4 } from 'gl-matrix';
+import { mat3, mat4 } from 'gl-matrix';
 import type { Camera } from './camera/camera';
+import type { GlConfig, GlTextureParams } from './types';
+import type { vec4 } from 'gl-matrix';
 
 export class Gl {
   private _canvasElement: HTMLCanvasElement;

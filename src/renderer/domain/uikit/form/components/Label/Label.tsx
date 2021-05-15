@@ -1,6 +1,7 @@
 import * as E from './Label.styles';
-import React, { FC } from 'react';
+import React from 'react';
 import classNames from 'classnames';
+import type { FC } from 'react';
 import type { LabelProps } from './Label.types';
 
 export const Label: FC<LabelProps> = ({

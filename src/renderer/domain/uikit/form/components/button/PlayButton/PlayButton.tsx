@@ -4,8 +4,10 @@ import { PlayButtonLobby } from './Lobby';
 import { PlayButtonLogo } from './Logo';
 import { PlayButtonPatcher } from './Patcher';
 import { PlayButtonPlay } from './Play';
-import { PlayButtonProps, PlayButtonState } from './PlayButton.types';
-import React, { FC, PropsWithChildren, useState } from 'react';
+import { PlayButtonState } from './PlayButton.types';
+import React, { useState } from 'react';
+import type { FC, PropsWithChildren} from 'react';
+import type { PlayButtonProps} from './PlayButton.types';
 
 export const PlayButton: FC<PropsWithChildren<PlayButtonProps>> = ({
   type,

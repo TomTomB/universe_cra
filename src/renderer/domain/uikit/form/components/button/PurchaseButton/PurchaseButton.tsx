@@ -1,5 +1,6 @@
 import * as E from './PurchaseButton.styles';
-import React, { FC } from 'react';
+import React from 'react';
+import type { FC } from 'react';
 import type { PurchaseButtonProps } from './PurchaseButton.types';
 
 export const PurchaseButton: FC<PurchaseButtonProps> = ({

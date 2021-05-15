@@ -1,6 +1,7 @@
 import * as E from './AnimatedBorderOverlay.styles';
-import React, { FC } from 'react';
+import React from 'react';
 import type { AnimatedBorderOverlayProps } from './AnimatedBorderOverlay.types';
+import type { FC } from 'react';
 
 export const AnimatedBorderOverlay: FC<AnimatedBorderOverlayProps> = ({
   speed = 25000,
