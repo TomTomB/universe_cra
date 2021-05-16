@@ -4,7 +4,6 @@ import { StyleSheetManager, ThemeProvider } from 'styled-components';
 import React from 'react';
 // import RootView from './modules/Shell/views/Root';
 // import UpdaterIPC from '@core/components/UpdaterIPC';
-import { Modal } from '@universe/renderer/uikit/overlay';
 import { render } from 'react-dom';
 import store from '@universe/renderer/store';
 
@@ -32,9 +31,6 @@ render(
           >
             Universe
           </h1>
-          <Modal show bottomButtons={[]}>
-            <h1 style={{ padding: '4rem 7rem' }}>Hello</h1>
-          </Modal>
           {/* <RootView /> */}
         </ThemeProvider>
       </>
