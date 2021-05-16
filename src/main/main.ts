@@ -5,7 +5,7 @@ import { init } from '@sentry/electron/dist/main';
 import { join } from 'path';
 import { sentryURL } from '../shared/constants';
 import AppUpdater from './updater/appUpdater';
-import LCUConnector from './lcu/lcu-connector';
+import LCUConnector from './lcu/lcuConnector';
 import Logger from './util/logger';
 
 init({
