@@ -50,8 +50,8 @@ export const Tooltip: FC<TooltipProps> = ({
   return (
     <>
       {transition(
-        (style, visible) =>
-          visible && (
+        (style, show) =>
+          show && (
             <E.StyledTooltip
               ref={setTooltipRef}
               {...getTooltipProps({ style: style as any })}
