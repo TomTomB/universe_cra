@@ -1,7 +1,4 @@
-import {
-  Animation,
-  AnimationWithTransition,
-} from '@universe/renderer/uikit/form';
+import { Animation, AnimationWithTransition } from '../../../base';
 import styled, { css } from 'styled-components';
 import type { PlayContainerProps } from './Play.types';
 

@@ -1,4 +1,4 @@
-import { Animation } from '@universe/renderer/uikit/form';
+import { Animation } from '../../../base';
 import PlayButtonFrameImage from './assets/images/play-button-frame-default.png';
 import styled, { css } from 'styled-components';
 

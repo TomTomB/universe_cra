@@ -1,4 +1,4 @@
-import { AnimationWithTransition } from '@universe/renderer/uikit/form';
+import { AnimationWithTransition } from '../../../base';
 import styled, { css, keyframes } from 'styled-components';
 import type { ProgressContainerProps } from './Patcher.types';
 
