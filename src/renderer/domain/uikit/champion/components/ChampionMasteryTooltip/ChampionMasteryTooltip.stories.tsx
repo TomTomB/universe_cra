@@ -1,5 +1,5 @@
-// import { Tooltip } from '@uikit/components/tooltip';
 import { ChampionMasteryTooltip } from './ChampionMasteryTooltip';
+import { Tooltip } from '@universe/renderer/uikit/overlay';
 import React, { useRef, useState } from 'react';
 import type { ChampionMasteryTooltipProps } from './ChampionMasteryTooltip.types';
 import type { Meta, Story } from '@storybook/react';
@@ -9,7 +9,6 @@ export default {
   component: ChampionMasteryTooltip,
 } as Meta;
 
-// TODO: Implement once tooltip is migrated
 const Template: Story<ChampionMasteryTooltipProps> = (args) => {
   const hoverRef = useRef<HTMLElement>(null);
   const [state, setState] = useState(false);
@@ -26,12 +25,9 @@ const Template: Story<ChampionMasteryTooltipProps> = (args) => {
     >
       <button ref={hoverRef as any}>Some Button</button>
 
-      <h1>TODO</h1>
-      <p> {args.championName} </p>
-
-      {/* <Tooltip defaultVisible placement="top" triggerRef={hoverRef.current}>
+      <Tooltip defaultVisible placement="top" triggerRef={hoverRef.current}>
         <ChampionMasteryTooltip {...args} />
-      </Tooltip> */}
+      </Tooltip>
     </div>
   );
 };

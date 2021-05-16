@@ -37,6 +37,7 @@ module.exports = {
     config.resolve.alias['@universe/renderer/uikit/lobby'] = path.resolve(__dirname, '../src/renderer/domain/uikit/lobby');
     config.resolve.alias['@universe/renderer/uikit/champion'] = path.resolve(__dirname, '../src/renderer/domain/uikit/champion');
     config.resolve.alias['@universe/renderer/uikit/summoner'] = path.resolve(__dirname, '../src/renderer/domain/uikit/summoner');
+    config.resolve.alias['@universe/renderer/uikit/overlay'] = path.resolve(__dirname, '../src/renderer/domain/uikit/overlay');
 
     return config;
   },

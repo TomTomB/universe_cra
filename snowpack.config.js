@@ -67,6 +67,7 @@ module.exports = {
     '@universe/renderer/uikit/lobby': './src/renderer/domain/uikit/lobby',
     '@universe/renderer/uikit/champion': './src/renderer/domain/uikit/champion',
     '@universe/renderer/uikit/summoner': './src/renderer/domain/uikit/summoner',
+    '@universe/renderer/uikit/overlay': './src/renderer/domain/uikit/overlay',
   },
   routes: [{ match: 'routes', src: '.*', dest: 'renderer/index.html' }],
   devOptions: {

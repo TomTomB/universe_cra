@@ -45,6 +45,9 @@
       ],
       "@universe/renderer/uikit/summoner": [
         "src/renderer/domain/uikit/summoner/index.ts"
+      ],
+      "@universe/renderer/uikit/overlay": [
+        "src/renderer/domain/uikit/overlay/index.ts"
       ]
     }
   }
