@@ -1,14 +1,27 @@
 const path = require('path');
 
 module.exports = {
+  core: {
+    builder: "webpack5",
+  },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   webpackFinal: async (config, { configType }) => {
-    config.module.rules.push({
-      test: /\.glsl$/,
-      loader: 'webpack-glsl-loader',
-      include: path.resolve(__dirname, '../'),
-    });
+    config.module.rules.push(
+      {
+        test: /\.glsl$/,
+        loader: 'webpack-glsl-loader',
+        include: path.resolve(__dirname, '../'),
+      }
+    );
+
+    config.module.rules.push(
+      {
+        test: /\.(webm|ogg)$/i,
+        type: 'asset/resource',
+        include: path.resolve(__dirname, '../'),
+      }
+    );
 
     config.resolve.alias['@universe/shared'] = path.resolve(__dirname, '../src/shared');
     config.resolve.alias['@universe/core'] = path.resolve(__dirname, '../src/core');
