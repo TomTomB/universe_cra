@@ -10,7 +10,6 @@ export default {
 
 const Template: Story<BannerProps> = (args) => (
   <div style={{ width: 220 }}>
-    {' '}
     <Banner {...args} />
   </div>
 );
