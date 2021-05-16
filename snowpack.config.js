@@ -64,6 +64,9 @@ module.exports = {
     '@universe/renderer/uikit/form': './src/renderer/domain/uikit/form',
     '@universe/renderer/uikit/webgl': './src/renderer/domain/uikit/webgl',
     '@universe/renderer/uikit/gamedata': './src/renderer/domain/uikit/gamedata',
+    '@universe/renderer/uikit/lobby': './src/renderer/domain/uikit/lobby',
+    '@universe/renderer/uikit/champion': './src/renderer/domain/uikit/champion',
+    '@universe/renderer/uikit/summoner': './src/renderer/domain/uikit/summoner',
   },
   routes: [{ match: 'routes', src: '.*', dest: 'renderer/index.html' }],
   devOptions: {

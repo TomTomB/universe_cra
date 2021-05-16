@@ -10,3 +10,4 @@ export * from './ParallaxBackground';
 export * from './RadialProgress';
 export * from './ScrollContainer';
 export * from './Thumbnail';
+export * from './Banner';

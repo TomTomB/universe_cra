@@ -36,6 +36,15 @@
       ],
       "@universe/renderer/uikit/gamedata": [
         "src/renderer/domain/uikit/gamedata/index.ts"
+      ],
+      "@universe/renderer/uikit/lobby": [
+        "src/renderer/domain/uikit/lobby/index.ts"
+      ],
+      "@universe/renderer/uikit/champion": [
+        "src/renderer/domain/uikit/champion/index.ts"
+      ],
+      "@universe/renderer/uikit/summoner": [
+        "src/renderer/domain/uikit/summoner/index.ts"
       ]
     }
   }

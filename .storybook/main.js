@@ -18,7 +18,7 @@ module.exports = {
     config.module.rules.push(
       {
         test: /\.(webm|ogg)$/i,
-        type: 'asset/resource',
+        type: 'asset',
         include: path.resolve(__dirname, '../'),
       }
     );
@@ -34,6 +34,9 @@ module.exports = {
     config.resolve.alias['@universe/renderer/uikit/form'] = path.resolve(__dirname, '../src/renderer/domain/uikit/form');
     config.resolve.alias['@universe/renderer/uikit/webgl'] = path.resolve(__dirname, '../src/renderer/domain/uikit/webgl');
     config.resolve.alias['@universe/renderer/uikit/gamedata'] = path.resolve(__dirname, '../src/renderer/domain/uikit/gamedata');
+    config.resolve.alias['@universe/renderer/uikit/lobby'] = path.resolve(__dirname, '../src/renderer/domain/uikit/lobby');
+    config.resolve.alias['@universe/renderer/uikit/champion'] = path.resolve(__dirname, '../src/renderer/domain/uikit/champion');
+    config.resolve.alias['@universe/renderer/uikit/summoner'] = path.resolve(__dirname, '../src/renderer/domain/uikit/summoner');
 
     return config;
   },
