@@ -1,12 +1,9 @@
 import * as E from './Patcher.styles';
 import { PlayButtonState } from '../PlayButton.types';
+import { Videos } from './assets';
 import { useCompare } from '@universe/renderer/uikit/core';
-import ProgressBarBorderLoop from './assets/video/progress-bar-border-loop.webm';
-import ProgressBarMainLoop from './assets/video/progress-bar-main-loop.webm';
-import ProgressBarTipIntro from './assets/video/progress-bar-tip-intro.webm';
-import ProgressBarTipLoop from './assets/video//progress-bar-tip-loop.webm';
 import React, { useEffect, useRef } from 'react';
-import type { FC} from 'react';
+import type { FC } from 'react';
 import type { PlayButtonPatcherProps } from './Patcher.types';
 
 export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({
@@ -62,7 +59,7 @@ export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({
         }}
       >
         <E.ProgressBarMainLoopAnimation
-          src={ProgressBarMainLoop}
+          src={Videos.progressBarMainLoop}
           show={true}
           loop
           autoPlay
@@ -73,14 +70,14 @@ export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({
 
       {/* TODO(TRB): Implement */}
       <E.ProgressBarTipLoopAnimation
-        src={ProgressBarTipIntro}
+        src={Videos.progressBarTipIntro}
         show={false}
         muted
         ref={patcherTipIntroAnim}
       />
 
       <E.ProgressBarTipLoopAnimation
-        src={ProgressBarTipLoop}
+        src={Videos.progressBarTipLoop}
         show={119 * (currentDownloadPercentage / 100) - 94 > -86}
         style={{
           left: `${119 * (currentDownloadPercentage / 100) - 94}px`,
@@ -92,7 +89,7 @@ export const PlayButtonPatcher: FC<PlayButtonPatcherProps> = ({
       />
 
       <E.ProgressBarBorderAnimation
-        src={ProgressBarBorderLoop}
+        src={Videos.progressBarBorderLoop}
         show={true}
         loop
         autoPlay

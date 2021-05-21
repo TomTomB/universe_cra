@@ -1,13 +1,4 @@
-import {
-  emptyMeterBlue,
-  emptyMeterChampion,
-  emptyMeterPink,
-  emptyMeterSummoner,
-  fullMeterBlue,
-  fullMeterChampion,
-  fullMeterPink,
-  fullMeterSummoner,
-} from './assets/images';
+import { Images } from './assets';
 import styled, { css } from 'styled-components';
 import type {
   RadialProgressType,
@@ -46,39 +37,39 @@ export const getLayerConfig = (type?: RadialProgressType) => {
     case 'blue':
       return css`
         ${BottomLayer} {
-          background-image: url(${emptyMeterBlue});
+          background-image: url(${Images.emptyMeterBlue});
         }
         ${MiddleLayer} {
-          background-image: url(${fullMeterBlue});
+          background-image: url(${Images.fullMeterBlue});
         }
       `;
 
     case 'champion':
       return css`
         ${BottomLayer} {
-          background-image: url(${emptyMeterChampion});
+          background-image: url(${Images.emptyMeterChampion});
         }
         ${MiddleLayer} {
-          background-image: url(${fullMeterChampion});
+          background-image: url(${Images.fullMeterChampion});
         }
       `;
 
     case 'pink':
       return css`
         ${BottomLayer} {
-          background-image: url(${emptyMeterPink});
+          background-image: url(${Images.emptyMeterPink});
         }
         ${MiddleLayer} {
-          background-image: url(${fullMeterPink});
+          background-image: url(${Images.fullMeterPink});
         }
       `;
     case 'summoner':
       return css`
         ${BottomLayer} {
-          background-image: url(${emptyMeterSummoner});
+          background-image: url(${Images.emptyMeterSummoner});
         }
         ${MiddleLayer} {
-          background-image: url(${fullMeterSummoner});
+          background-image: url(${Images.fullMeterSummoner});
         }
       `;
 

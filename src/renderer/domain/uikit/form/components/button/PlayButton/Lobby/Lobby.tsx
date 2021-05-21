@@ -1,14 +1,9 @@
 import * as E from './Lobby.styles';
 import { PlayButtonState } from '../PlayButton.types';
+import { Videos } from './assets';
 import { useCompare } from '@universe/renderer/uikit/core';
-import LobbyHoverIntro from './assets/video/lobby-button-hover-intro.webm';
-import LobbyHoverLoop from './assets/video/lobby-button-hover-loop.webm';
-import LobbyHoverOutro from './assets/video/lobby-button-hover-outro.webm';
-import LobbyIntro from './assets/video/lobby-button-intro.webm';
-import LobbyMagicRelease from './assets/video/lobby-button-magic-release.webm';
-import LobbyRelease from './assets/video/lobby-button-release.webm';
 import React, { useEffect, useRef } from 'react';
-import type { FC} from 'react';
+import type { FC } from 'react';
 import type { PlayButtonLobbyProps } from './Lobby.types';
 
 export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
@@ -99,20 +94,20 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
           buttonState.prev === PlayButtonState.LOBBY_DISABLED &&
           buttonState.curr === PlayButtonState.LOBBY
         }
-        src={LobbyIntro}
+        src={Videos.lobbyIntro}
         ref={lobbyIntroElem}
       />
 
       <E.LobbyAnimation
         muted
         show={isHovering}
-        src={LobbyHoverIntro}
+        src={Videos.lobbyHoverIntro}
         ref={lobbyHoverIntroElem}
       />
 
       <E.LobbyAnimation
         show={isHovering}
-        src={LobbyHoverLoop}
+        src={Videos.lobbyHoverLoop}
         autoPlay
         muted
         loop
@@ -123,7 +118,7 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
       <E.LobbyAnimation
         muted
         show={false}
-        src={LobbyHoverOutro}
+        src={Videos.lobbyHoverOutro}
         ref={lobbyHoverOutroElem}
       />
 
@@ -135,7 +130,7 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
         }
         autoPlay
         muted
-        src={LobbyRelease}
+        src={Videos.lobbyRelease}
         ref={lobbyReleaseElem}
       />
 
@@ -147,7 +142,7 @@ export const PlayButtonLobby: FC<PlayButtonLobbyProps> = ({
         }
         autoPlay
         muted
-        src={LobbyMagicRelease}
+        src={Videos.lobbyMagicRelease}
         ref={lobbyMagicReleaseElem}
       />
     </E.LobbyContainer>

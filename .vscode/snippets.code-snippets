@@ -8,5 +8,20 @@
     "scope": "typescript",
     "prefix": "uni-ex",
     "body": "export * from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}'; \nexport * as ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}Styles from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}.styles'; \nexport * as ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}Types from './${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}.types'; \n"
+  },
+  "exportComponentAssets": {
+    "scope": "typescript",
+    "prefix": "uni-exa",
+    "body": "export * as ${TM_DIRECTORY/.*[\\\\\\/](.*)$/$1/}Assets from './assets'"
+  },
+  "exportComponentImages": {
+    "scope": "typescript",
+    "prefix": "uni-exi",
+    "body": "export * as Images from './images'"
+  },
+  "exportComponentVideos": {
+    "scope": "typescript",
+    "prefix": "uni-exv",
+    "body": "export * as Videos from './videos'"
   }
 }

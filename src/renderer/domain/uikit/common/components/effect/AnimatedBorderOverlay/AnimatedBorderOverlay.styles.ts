@@ -1,5 +1,4 @@
-import noiseTileAlphaTintLarge from './assets/images/noise-tile-alpha-tint-large.png';
-import noiseTileAlphaTintSmall from './assets/images/noise-tile-alpha-tint-small.png';
+import { Images } from './assets';
 import styled, { keyframes } from 'styled-components';
 
 export const borderNoiseScrollAnimation = keyframes`
@@ -113,12 +112,12 @@ export const GlowContent = styled.div<{ speed: number }>`
   background-size: 200%;
 
   &.scroll {
-    background-image: url(${noiseTileAlphaTintLarge});
+    background-image: url(${Images.noiseTileAlphaTintLarge});
     animation: ${borderNoiseScrollAnimation} ${(props) => props.speed}ms linear
       infinite;
   }
   &.overlay {
-    background-image: url(${noiseTileAlphaTintSmall});
+    background-image: url(${Images.noiseTileAlphaTintSmall});
     animation: ${borderNoiseScrollAnimation} ${(props) => props.speed}ms linear
       infinite;
   }

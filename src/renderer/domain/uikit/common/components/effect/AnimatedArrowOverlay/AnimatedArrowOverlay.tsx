@@ -1,8 +1,8 @@
 import * as E from './AnimatedArrowOverlay.styles';
+import { Assets } from './assets';
 import React, { useRef } from 'react';
-import noiseTileAlphaTintLarge from './assets/images/noise-tile-alpha-tint-large.png';
 import type { AnimatedArrowOverlayProps } from './AnimatedArrowOverlay.types';
-import type { FC} from 'react';
+import type { FC } from 'react';
 
 export const AnimatedArrowOverlay: FC<AnimatedArrowOverlayProps> = ({
   isCarrot = true,
@@ -44,7 +44,7 @@ export const AnimatedArrowOverlay: FC<AnimatedArrowOverlayProps> = ({
               patternUnits="userSpaceOnUse"
             >
               <image
-                xlinkHref={noiseTileAlphaTintLarge}
+                xlinkHref={Assets.noiseTileAlphaTintLarge}
                 x="0"
                 y="0"
                 width="400"
@@ -72,7 +72,7 @@ export const AnimatedArrowOverlay: FC<AnimatedArrowOverlayProps> = ({
               patternUnits="userSpaceOnUse"
             >
               <image
-                xlinkHref={noiseTileAlphaTintLarge}
+                xlinkHref={Assets.noiseTileAlphaTintLarge}
                 x="0"
                 y="0"
                 width="400"

@@ -1,16 +1,9 @@
 import * as E from './Play.styles';
 import { PlayButtonState } from '../PlayButton.types';
+import { Videos } from './assets';
 import { useCompare } from '@universe/renderer/uikit/core';
-import LobbyToPlay from './assets/video/lobby-button-to-play-button.webm';
-import PatcherToPlay from './assets/video/patcher-to-play-button-enabled.webm';
-import PlayButtonEnabledIntro from './assets/video/play-button-enabled-intro.webm';
-import PlayButtonHoverIntro from './assets/video/play-button-hover-intro.webm';
-import PlayButtonHoverLoop from './assets/video/play-button-hover-loop.webm';
-import PlayButtonHoverOutro from './assets/video/play-button-hover-outro.webm';
-import PlayButtonMagicRelease from './assets/video/play-button-magic-release.webm';
-import PlayButtonRelease from './assets/video/play-button-release.webm';
 import React, { useEffect, useRef, useState } from 'react';
-import type { FC} from 'react';
+import type { FC } from 'react';
 import type { PlayButtonPlayProps } from './Play.types';
 
 export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
@@ -122,7 +115,7 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
     >
       <E.PatcherToPlayAnimation
         show={showPatcherToPlay}
-        src={PatcherToPlay}
+        src={Videos.patcherToPlay}
         ref={patcherToPlayElem}
         muted
         onEnded={() => {
@@ -136,7 +129,7 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
 
       <E.PlayAnimation
         show={showLobbyToPlay}
-        src={LobbyToPlay}
+        src={Videos.lobbyToPlay}
         ref={lobbyToPlayElem}
         muted
         onEnded={() => {
@@ -156,21 +149,21 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
           !showLobbyToPlay
         }
         muted
-        src={PlayButtonEnabledIntro}
+        src={Videos.playButtonEnabledIntro}
         ref={playEnabledIntroElem}
         autoPlay
       />
 
       <E.PlayAnimation
         show={isHovering}
-        src={PlayButtonHoverIntro}
+        src={Videos.playButtonHoverIntro}
         ref={playHoverIntroElem}
         muted
       />
 
       <E.PlayAnimation
         show={isHovering}
-        src={PlayButtonHoverLoop}
+        src={Videos.playButtonHoverLoop}
         autoPlay
         loop
         muted
@@ -180,21 +173,21 @@ export const PlayButtonPlay: FC<PlayButtonPlayProps> = ({
       {/* TODO(TRB): Implement */}
       <E.PlayAnimation
         show={false}
-        src={PlayButtonHoverOutro}
+        src={Videos.playButtonHoverOutro}
         ref={playHoverOutroElem}
         muted
       />
 
       <E.PlayAnimationWithoutTransition
         show={buttonState.curr === PlayButtonState.PLAY_DISABLED}
-        src={PlayButtonRelease}
+        src={Videos.playButtonRelease}
         ref={playReleaseElem}
         muted
       />
 
       <E.PlayAnimationWithoutTransition
         show={buttonState.curr === PlayButtonState.PLAY_DISABLED}
-        src={PlayButtonMagicRelease}
+        src={Videos.playButtonMagicRelease}
         ref={playReleaseMagicElem}
         muted
       />

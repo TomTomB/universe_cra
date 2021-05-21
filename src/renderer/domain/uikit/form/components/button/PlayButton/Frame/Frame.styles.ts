@@ -1,5 +1,5 @@
 import { Animation } from '../../../base';
-import PlayButtonFrameImage from './assets/images/play-button-frame-default.png';
+import { Images } from './assets';
 import styled, { css } from 'styled-components';
 
 export const Frame = styled.div<{ show: boolean }>`
@@ -11,7 +11,7 @@ export const Frame = styled.div<{ show: boolean }>`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(${PlayButtonFrameImage});
+  background-image: url(${Images.playButtonFrameImage});
   transition: 400ms background ease;
   opacity: 0;
 

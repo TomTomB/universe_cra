@@ -1,7 +1,4 @@
-import borderArrowClick from './assets/images/border-arrow-click.png';
-import borderArrowDisabled from './assets/images/border-arrow-disabled.png';
-import borderArrowHover from './assets/images/border-arrow-hover.png';
-import borderArrowUp from './assets/images/border-arrow-up.png';
+import { Images } from './assets';
 import styled, { css } from 'styled-components';
 
 export const ButtonStateBase = styled.div`
@@ -17,17 +14,17 @@ export const ButtonStateBase = styled.div`
 
 export const Default = styled(ButtonStateBase)`
   opacity: 1;
-  background-image: url(${borderArrowUp});
+  background-image: url(${Images.borderArrowUp});
 `;
 
 export const Click = styled(ButtonStateBase)`
-  background-image: url(${borderArrowClick});
+  background-image: url(${Images.borderArrowClick});
 `;
 export const Hover = styled(ButtonStateBase)`
-  background-image: url(${borderArrowHover});
+  background-image: url(${Images.borderArrowHover});
 `;
 export const Disabled = styled(ButtonStateBase)`
-  background-image: url(${borderArrowDisabled});
+  background-image: url(${Images.borderArrowDisabled});
 `;
 
 export const StyledArrowButton = styled.button<{ rotated?: boolean }>`

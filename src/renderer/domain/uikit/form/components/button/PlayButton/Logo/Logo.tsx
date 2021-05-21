@@ -1,11 +1,8 @@
 import { Animation } from '../../../base';
 import { LogoAnim } from './Logo.types';
 import { PlayButtonState } from '../PlayButton.types';
+import { Videos } from './assets';
 import { useCompare } from '@universe/renderer/uikit/core';
-import LeagueLogoIntro from './assets/video/league-logo-intro.webm';
-import LeagueLogoLoopActive from './assets/video/league-logo-loop-active.webm';
-import LeagueLogoLoopIdle from './assets/video/league-logo-loop-idle.webm';
-import LeagueLogoMagic from './assets/video/league-logo-magic.webm';
 import React, { useEffect, useRef, useState } from 'react';
 import type { FC } from 'react';
 import type { PlayButtonLogoProps } from './Logo.types';
@@ -166,7 +163,7 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
     <>
       <Animation
         show={shownLogoAnim === LogoAnim.INTRO}
-        src={LeagueLogoIntro}
+        src={Videos.leagueLogoIntro}
         ref={logoIntroAnim}
         muted
         onEnded={() => {
@@ -178,7 +175,7 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       />
       <Animation
         show={shownLogoAnim === LogoAnim.IDLE && !showLogoMagic}
-        src={LeagueLogoLoopIdle}
+        src={Videos.leagueLogoLoopIdle}
         ref={logoLoopIdleAnim}
         muted
         onEnded={() => {
@@ -190,7 +187,7 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       />
       <Animation
         show={shownLogoAnim === LogoAnim.ACTIVE}
-        src={LeagueLogoLoopActive}
+        src={Videos.leagueLogoLoopActive}
         ref={logoLoopActiveAnim}
         muted
         onEnded={() => {
@@ -202,7 +199,7 @@ export const PlayButtonLogo: FC<PlayButtonLogoProps> = ({
       />
       <Animation
         show={showLogoMagic}
-        src={LeagueLogoMagic}
+        src={Videos.leagueLogoMagic}
         ref={logoMagicAnim}
         muted
         onEnded={() => {

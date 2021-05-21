@@ -1,25 +1,11 @@
-import iconAdd from './assets/images/icon_add.png';
-import iconArrowRight from './assets/images/arrow-right.png';
-import iconBack from './assets/images/icon_back.png';
-import iconClearAll from './assets/images/icon_clearall.png';
-import iconCompare from './assets/images/icon_compare.png';
-import iconCopy from './assets/images/icon_copy.png';
-import iconDelete from './assets/images/icon_delete.png';
-import iconEdit from './assets/images/icon_edit.png';
-import iconExport from './assets/images/icon_export.png';
-import iconImport from './assets/images/icon_import.png';
-import iconNext from './assets/images/icon_next.png';
-import iconPlus from './assets/images/icon_plus.png';
-import iconRefresh from './assets/images/refresh.png';
-import iconSettings from './assets/images/icon_settings.png';
-import iconX from './assets/images/x-icon.png';
+import { Images } from './assets';
 import styled, { css } from 'styled-components';
 import type { StyledCloseButtonProps } from './CloseButton.types';
 
 export const CloseIcon = styled.div<StyledCloseButtonProps>`
   width: 10px;
   height: 10px;
-  -webkit-mask: url(${iconX}) no-repeat center;
+  -webkit-mask: url(${Images.iconX}) no-repeat center;
   -webkit-mask-size: 10px;
   background-color: #cdbe91;
 
@@ -28,7 +14,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 7px;
       height: 10px;
-      -webkit-mask: url(${iconArrowRight}) no-repeat center;
+      -webkit-mask: url(${Images.iconArrowRight}) no-repeat center;
       -webkit-mask-size: 7px 10px;
     `}
 
@@ -37,7 +23,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 20px;
       height: 20px;
-      -webkit-mask: url(${iconRefresh}) no-repeat center;
+      -webkit-mask: url(${Images.iconRefresh}) no-repeat center;
       -webkit-mask-size: 20px 20px;
     `}
 
@@ -46,7 +32,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 24px;
       height: 24px;
-      -webkit-mask: url(${iconSettings}) no-repeat center;
+      -webkit-mask: url(${Images.iconSettings}) no-repeat center;
       -webkit-mask-size: 18px 18px;
     `}
 
@@ -55,7 +41,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 13px;
       height: 12px;
-      -webkit-mask: url(${iconEdit}) no-repeat center;
+      -webkit-mask: url(${Images.iconEdit}) no-repeat center;
       -webkit-mask-size: 13px 12px;
     `}
 
@@ -64,7 +50,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 10px;
       height: 10px;
-      -webkit-mask: url(${iconAdd}) no-repeat center;
+      -webkit-mask: url(${Images.iconAdd}) no-repeat center;
       -webkit-mask-size: 10px 10px;
     `}
 
@@ -73,7 +59,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 13px;
       height: 15px;
-      -webkit-mask: url(${iconDelete}) no-repeat center;
+      -webkit-mask: url(${Images.iconDelete}) no-repeat center;
       -webkit-mask-size: 13px 15px;
     `}
 
@@ -82,7 +68,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 17px;
       height: 16px;
-      -webkit-mask: url(${iconNext});
+      -webkit-mask: url(${Images.iconNext});
       -webkit-mask-size: 17px 16px;
     `}
 
@@ -91,7 +77,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 24px;
       height: 24px;
-      -webkit-mask: url(${iconCompare}) no-repeat center;
+      -webkit-mask: url(${Images.iconCompare}) no-repeat center;
       -webkit-mask-size: 18px 18px;
     `}
 
@@ -100,7 +86,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 16px;
       height: 16px;
-      -webkit-mask: url(${iconBack}) no-repeat center;
+      -webkit-mask: url(${Images.iconBack}) no-repeat center;
       -webkit-mask-size: 16px 16px;
     `}
 
@@ -109,7 +95,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 11px;
       height: 11px;
-      -webkit-mask: url(${iconPlus}) no-repeat center;
+      -webkit-mask: url(${Images.iconPlus}) no-repeat center;
       -webkit-mask-size: 11px 11px;
     `}
 
@@ -118,7 +104,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 20px;
       height: 20px;
-      -webkit-mask: url(${iconCopy}) no-repeat center;
+      -webkit-mask: url(${Images.iconCopy}) no-repeat center;
       -webkit-mask-size: 18px 18px;
     `}
 
@@ -127,7 +113,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 17px;
       height: 16px;
-      -webkit-mask: url(${iconClearAll}) no-repeat center;
+      -webkit-mask: url(${Images.iconClearAll}) no-repeat center;
       -webkit-mask-size: 17px 16px;
     `}
 
@@ -136,7 +122,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 17px;
       height: 16px;
-      -webkit-mask: url(${iconExport}) no-repeat center;
+      -webkit-mask: url(${Images.iconExport}) no-repeat center;
       -webkit-mask-size: 14px 14px;
     `}
 
@@ -145,7 +131,7 @@ export const CloseIcon = styled.div<StyledCloseButtonProps>`
     css`
       width: 17px;
       height: 16px;
-      -webkit-mask: url(${iconImport}) no-repeat center;
+      -webkit-mask: url(${Images.iconImport}) no-repeat center;
       -webkit-mask-size: 14px 14px;
     `}
 `;
